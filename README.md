@@ -2,12 +2,12 @@
 
 ### members
 
-1.
+1. Thiarakun Chanrungrueang 6809540153 (UX/UI)
 2.
 3.
 4.
 5.
 6.
-7. Thiarakun Chanrungrueang 6809540153 (UX/UI)
+7.
 8.
 9.
