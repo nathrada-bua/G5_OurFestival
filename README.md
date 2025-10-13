@@ -5,7 +5,7 @@
 1. Thiarakun Chanrungrueang 6809540153 (UX/UI)
 2. Nathrada Buasuwan 6809617118 (JavaScript Development (Registration Page))
 3. 6809617175
-4. 6809617258
+4. Pithayakorn Sirisunthornkamon 6809617258 (Booth Page)
 5. 6809617266
 6. Manawat Boonkrong 6809617316 (Html Development (Homepage))
 7. 6809617498
