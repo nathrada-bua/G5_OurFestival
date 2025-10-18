@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #fff;
+}
+
+.logo img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.navbar nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.login {
+  background: #4e8ef7;
+  color: white;
+}
+
+.signin {
+  background: #f25b5b;
+  color: white;
+}
