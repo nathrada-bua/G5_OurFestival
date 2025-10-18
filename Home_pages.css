@@ -34,3 +34,23 @@
   background: #f25b5b;
   color: white;
 }
+
+/* Footer */
+footer {
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+  margin-top: 50px;
+}
+
+footer p {
+  font-weight: 600;
+}
+
+footer .social i {
+  margin-left: 12px;
+  font-size: 18px;
+  cursor: pointer;
+}
