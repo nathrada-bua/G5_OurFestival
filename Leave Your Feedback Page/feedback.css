@@ -67,3 +67,65 @@ header .logo img {
     background: #f25b5b;
     color: white;
 }
+
+
+
+/*  Footer  */
+footer {
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+footer p {
+    font-weight: 600;
+}
+
+footer .social i {
+    font-size: 1.5rem;
+    color: #134686;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer .social i:hover {
+    color: #ED3F27;
+}
+
+/*  Media Queries */
+@media (max-width: 767px) {
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar .logo img {
+        width: 70px;
+        /* มือถือใหญ่ขึ้น */
+    }
+
+    .navbar .right-menu {
+        flex-wrap: nowrap;
+        gap: 5px;
+        /* ชิดกันมากขึ้น */
+    }
+
+    .navbar nav a {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar nav a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar .logo img {
+        width: 75px;
+    }
+}
