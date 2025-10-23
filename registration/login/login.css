@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
-    background-image: url("/resources/registration-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    
     margin: 0;
     font-family: "Inter", sans-serif;
 }
@@ -53,18 +51,62 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    background-image: url("/resources/registration-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container-bg {
-    width: 350px;
-    height: 400px;
-    background-color: #ffffff8a;
+    margin-top: 150px;
+    width: 400px;
+    height: 450px;
+    background-color: #ffffff80;
     border-radius: 15px;
-    text-align: center;
 }
 
 #title {
+    text-align: center;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#checkbox{
+    margin-top: 15px;
+    accent-color: black;
+    transform: scale(1.5);
+}
+
+.section1 {
+    margin: 0 35px 20px 35px;
+}
+
+.section2 {
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+#input-text {
+    width: 320px;
+    height: 30px;
+}
+
+#forgot-info {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.remember-container {
+    display: flex;
+    align-items: center;
+}
+
+#remember-info {
+    margin: 15px 0 0 15px;
 }
