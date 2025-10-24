@@ -32,7 +32,7 @@ body {
 .btn {
     border: none;
     padding: 6px 14px;
-    border-radius: 12px;
+    border-radius: 25px;
     cursor: pointer;
     font-weight: 500;
 }
@@ -40,11 +40,31 @@ body {
 .btn.login {
     background-color: #4e8ef7;
     color: white;
+    margin: 0 20px;
 }
 
 .btn.signin {
     background-color: #f25b5b;
     color: white;
+    margin: 0 20px 0 0;
+}
+
+.home {
+    margin: 0 20px;
+}
+
+.about-us {
+    margin: 0 20px;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin: 0;
+    font-weight: 600;
 }
 
 .container {
