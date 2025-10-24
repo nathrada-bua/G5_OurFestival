@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-/*  Header  */
+/* Header  */
 header h1 {
     color: #134686;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -26,13 +26,15 @@ header .logo img {
     width: 50px;
 }
 
-/*  Navbar  */
+/* Navbar  */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 40px;
+    padding: 12px 40px; /* Padding สำหรับ Desktop/Tablet */
     background-color: #fff;
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .navbar .logo img {
@@ -73,7 +75,7 @@ header .logo img {
     text-decoration: none;
 }
 
-/*  Rating Card  */
+/* Rating Card  */
 #ratingCard {
     background-color: #ffffff; 
     border: 3px solid #FEB21A; 
@@ -91,7 +93,7 @@ header .logo img {
     color: #333;
 }
 
-/*  Stars  */
+/* Stars  */
 .rating-stars-and-emoji {
     display: flex;
     align-items: center;
@@ -181,14 +183,22 @@ header .logo img {
     background-color: #0d2f5a; 
 }
 
-/*  Footer  */
+/* Footer  */
 footer {
-    padding: 25px 60px;
+    padding: 40px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #ddd;
     margin-top: 10px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+footer .social {
+    display: flex; 
+    gap: 1rem;     
+    align-items: center; 
 }
 
 footer p {
@@ -206,26 +216,24 @@ footer .social i:hover {
     color: #ED3F27;
 }
 
-/*  Media Queries */
+/* Media Queries */
 @media (max-width: 767px) {
 
-    body {
-        padding: 0 20px; 
+    .navbar {
+        padding: 10px 20px; 
     }
 
-    .navbar {
-        padding: 10px 20px;
+    .main-content-wrapper {
+        padding: 20px 20px; 
     }
 
     .navbar .logo img {
         width: 70px;
-        /* มือถือใหญ่ขึ้น */
     }
 
     .navbar .right-menu {
         flex-wrap: nowrap;
         gap: 5px;
-        /* ชิดกันมากขึ้น */
     }
 
     .navbar nav a {
@@ -235,6 +243,7 @@ footer .social i:hover {
     #ratingCard {
         padding: 1.5rem;
     }
+
     .star svg {
         width: 35px;
         height: 35px;
@@ -243,13 +252,18 @@ footer .social i:hover {
     .feedback-wrapper {
         align-items: center;
     }
+
     .feedback-prompt-text {
         text-align: center;
     }
+
     .submit-btn {
         align-self: center;
     }
 
+    footer {
+        padding: 40px 20px; 
+    }
 }
 
 @media (min-width: 768px) {
