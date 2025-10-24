@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-body {
-    
+body {  
     margin: 0;
     font-family: "Inter", sans-serif;
 }
@@ -78,9 +77,16 @@ body {
     z-index: 100;
 }
 
-.container-bg {
+.login-container-bg {
     width: 400px;
     height: 450px;
+    background-color: #ffffff80;
+    border-radius: 15px;
+}
+
+.signin-container-bg {
+    width: 400px;
+    height: 615px;
     background-color: #ffffff80;
     border-radius: 15px;
 }
@@ -119,6 +125,7 @@ body {
     height: 35px;
     border: none;
     border-radius: 6px;
+    font-size: 20px;
 }
 
 #forgot-info {
