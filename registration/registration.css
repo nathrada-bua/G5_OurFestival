@@ -25,7 +25,7 @@ body {
 .navbar nav a {
     text-decoration: none;
     color: #000;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .btn {
@@ -39,21 +39,21 @@ body {
 .btn.login {
     background-color: #4e8ef7;
     color: white;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .btn.signin {
     background-color: #f25b5b;
     color: white;
-    margin: 0 20px 0 0;
+    margin: 0 15px 0 0;
 }
 
 .home {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .about-us {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .text-container {
