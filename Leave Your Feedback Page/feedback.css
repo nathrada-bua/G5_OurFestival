@@ -7,25 +7,20 @@ body {
     flex-direction: column; 
     margin: 0;
 }
-
 /* Header  */
 header h1 {
     color: #134686;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 header p {
     color: #ED3F27;
 }
-
 header {
     padding: 10px 20px;
 }
-
 header .logo img {
     width: 50px;
 }
-
 /* Navbar  */
 .navbar {
     display: flex;
@@ -36,45 +31,49 @@ header .logo img {
     width: 100%; 
     box-sizing: border-box; 
 }
-
 .navbar .logo img {
     width: 70px;
     transition: all 0.3s ease;
 }
-
 .navbar .right-menu {
     display: flex;
     align-items: center;
     gap: 6px;
 }
-
 .navbar nav a {
     text-decoration: none;
     color: #000;
-    font-size: 0.9rem;
+    font-size: 0.95rem; /* <-- ปรับลดขนาดลงอีก */
+    font-weight: 700; /* ปรับให้หนาขึ้น */
+    margin-right: 1rem; /* ปรับลดระยะห่างด้านขวาของลิงก์ */
 }
-
 /* ปุ่ม */
 .btn {
     border: none;
-    padding: 6px 14px;
-    border-radius: 12px;
+    padding: 7px 16px; /* <-- ปรับลดขนาด padding ลงอีก */
+    border-radius: 9999px; /* ปรับให้โค้งมนแบบ Pill Shape */
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 700; /* ทำให้ตัวอักษรหนาขึ้น */
+    font-size: 0.95rem; /* <-- ปรับลดขนาดตัวอักษรลงอีก */
 }
-
 .login {
     background: #4e8ef7;
     color: white;
     text-decoration: none;
+    transition: background-color 0.3s;
 }
-
+.login:hover {
+    background: #3a75e3;
+}
 .signin {
     background: #f25b5b;
     color: white;
     text-decoration: none;
+    transition: background-color 0.3s;
 }
-
+.signin:hover {
+    background: #e34c4c;
+}
 /* Rating Card  */
 #ratingCard {
     background-color: #ffffff; 
@@ -85,14 +84,12 @@ header .logo img {
     max-width: 650px; 
     width: 90%; 
 }
-
 .rate-us-title {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
     color: #333;
 }
-
 /* Stars  */
 .rating-stars-and-emoji {
     display: flex;
@@ -100,12 +97,10 @@ header .logo img {
     gap: 1.5rem; 
     margin-bottom: 1rem; 
 }
-
 #starRating {
     display: flex;
     gap: 0.25rem;
 }
-
 .star svg {
     stroke-width: 1;
     width: 45px; 
@@ -115,13 +110,11 @@ header .logo img {
     cursor: pointer;
     transition: fill 0.2s ease;
 }
-
 .star:hover svg,
 .star.active svg {
     fill: #FEB21A;
     filter: drop-shadow(0 0 8px rgba(254, 178, 26, 0.6));
 }
-
 /* Feedback Wrapper */
 .feedback-wrapper {
     max-width: 100%; 
@@ -130,7 +123,6 @@ header .logo img {
     flex-direction: column;
     align-items: flex-start;
 }
-
 .main-content-wrapper {
     display: flex;
     justify-content: center; 
@@ -138,7 +130,6 @@ header .logo img {
     flex-grow: 1; 
     padding: 20px 0; 
 }
-
 /* Feedback Prompt Text */
 .feedback-prompt-text {
     font-size: 1rem;
@@ -148,7 +139,6 @@ header .logo img {
     width: 100%;
     text-align: left;
 }
-
 /* Textarea */
 .comment-textarea {
     border: 1px solid #d1d5db; 
@@ -164,7 +154,6 @@ header .logo img {
     margin-bottom: 2rem;
     box-sizing: border-box; 
 }
-
 /* Submit Button */
 .submit-btn {
     background: #134686; 
@@ -178,11 +167,9 @@ header .logo img {
     transition: background-color 0.2s ease;
     align-self: flex-start;
 }
-
 .submit-btn:hover {
     background-color: #0d2f5a; 
 }
-
 /* Footer  */
 footer {
     padding: 40px 60px;
@@ -218,11 +205,22 @@ footer .social i:hover {
 
 /* Media Queries */
 @media (max-width: 767px) {
-
+    
     .navbar {
         padding: 10px 20px; 
     }
 
+    .navbar nav a {
+        font-size: 0.8rem; 
+        margin-right: 0.8rem; 
+    }
+    
+    .btn {
+        padding: 5px 12px; 
+        font-size: 0.8rem;  
+        border-radius: 9999px;
+    }
+    
     .main-content-wrapper {
         padding: 20px 20px; 
     }
@@ -234,10 +232,6 @@ footer .social i:hover {
     .navbar .right-menu {
         flex-wrap: nowrap;
         gap: 5px;
-    }
-
-    .navbar nav a {
-        font-size: 0.85rem;
     }
 
     #ratingCard {
@@ -268,7 +262,7 @@ footer .social i:hover {
 
 @media (min-width: 768px) {
     .navbar nav a {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
 }
 
