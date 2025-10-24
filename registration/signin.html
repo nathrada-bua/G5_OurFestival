@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in Page</title>
-    <link rel="stylesheet" href="../registration.css">
+    <title>Sign in Page</title>
+    <link rel="stylesheet" href="registration.css">
 </head>
 <body>
     <header class="navbar">
@@ -31,28 +31,26 @@
         </div>
     </header>
 
-    <div class="container">
-        <div class="login-container-bg">
-            <p id="title">Log in</p>
+    <form class="container">
+        <div class="signin-container-bg">
+            <p id="title">Sign in</p>
 
             <div class="section1">
                 <p class="subtitle">Username</p>
-                <input type="text" id="input-text">
+                <input type="text" id="input-text" name="username" minlength="3" maxlength="15" required>
+                <p class="subtitle">Email</p>
+                <input type="text" id="input-text" name="email" pattern="[a-zA-z0-9\.]+@[a-zA-Z0-9]+\.[a-z]{2,}" required>
                 <p class="subtitle">Password</p>
-                <input type="text" id="input-text">
-                <br>
-                <div class="remember-container">
-                    <input type="checkbox" id="checkbox">
-                    <p id="remember-info">Remember me</p>
-                </div>
+                <input type="text" id="input-text" name="password" required>
+                <p class="subtitle">Confirm Password</p>
+                <input type="text" id="input-text" name="confirm-password" required>
             </div>
             
             <div class="section2">
-                <input type="submit" value="Log in" id="loginBtn">
+                <button type="submit" id="loginBtn">Sign in</button>
                 <p id="forgot-info">Forgot Username/Password ?</p>
             </div>
         </div>
-    </div>
-    
+    </form>
 </body>
 </html>

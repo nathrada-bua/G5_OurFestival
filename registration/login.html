@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in Page</title>
-    <link rel="stylesheet" href="../registration.css">
+    <title>Log in Page</title>
+    <link rel="stylesheet" href="registration.css">
 </head>
 <body>
     <header class="navbar">
@@ -31,26 +31,28 @@
         </div>
     </header>
 
-    <div class="container">
-        <div class="signin-container-bg">
-            <p id="title">Sign in</p>
+    <form class="container">
+        <div class="login-container-bg">
+            <p id="title">Log in</p>
 
             <div class="section1">
                 <p class="subtitle">Username</p>
-                <input type="text" id="input-text">
-                <p class="subtitle">Email</p>
-                <input type="text" id="input-text">
+                <input type="text" id="input-text" name="username" minlength="3" maxlength="15" required>
                 <p class="subtitle">Password</p>
-                <input type="text" id="input-text">
-                <p class="subtitle">Confirm Password</p>
-                <input type="text" id="input-text">
+                <input type="text" id="input-text" name="password" required>
+                <br>
+                <div class="remember-container">
+                    <input type="checkbox" id="checkbox">
+                    <p id="remember-info">Remember me</p>
+                </div>
             </div>
             
             <div class="section2">
-                <input type="submit" value="Sign in" id="loginBtn">
+                <button type="submit" id="loginBtn">Log in</button>
                 <p id="forgot-info">Forgot Username/Password ?</p>
             </div>
         </div>
-    </div>
+    </form>
+    
 </body>
 </html>
