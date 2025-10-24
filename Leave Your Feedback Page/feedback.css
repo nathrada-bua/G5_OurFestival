@@ -1,8 +1,11 @@
 body {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    background-color: #FDF4E3;
-    min-height: 100%;
+    background-color: #FDF4E3; 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    margin: 0;
 }
 
 /*  Header  */
@@ -72,12 +75,13 @@ header .logo img {
 
 /*  Rating Card  */
 #ratingCard {
-    background-color: #ffffff;
-    border: 3px solid #FEB21A;
-    border-radius: 2rem;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    margin-bottom: rem;
+    background-color: #ffffff; 
+    border: 3px solid #FEB21A; 
+    border-radius: 1.5rem; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
+    padding: 2.5rem;
+    max-width: 650px; 
+    width: 90%; 
 }
 
 .rate-us-title {
@@ -101,19 +105,80 @@ header .logo img {
 }
 
 .star svg {
-    width: 8vw;
-    max-width: 50px;
-    min-width: 20px;
-    height: auto;
-    fill: #d1d5db;
-    stroke: #134686;
     stroke-width: 1;
+    width: 45px; 
+    height: 45px;
+    fill: #d1d5db; 
+    stroke: #134686; 
+    cursor: pointer;
+    transition: fill 0.2s ease;
 }
 
 .star:hover svg,
 .star.active svg {
     fill: #FEB21A;
     filter: drop-shadow(0 0 8px rgba(254, 178, 26, 0.6));
+}
+
+/* Feedback Wrapper */
+.feedback-wrapper {
+    max-width: 100%; 
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-content-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    flex-grow: 1; 
+    padding: 20px 0; 
+}
+
+/* Feedback Prompt Text */
+.feedback-prompt-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ED3F27; 
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+/* Textarea */
+.comment-textarea {
+    border: 1px solid #d1d5db; 
+    background-color: #ffffff; 
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    height: 150px;
+    resize: none;
+    width: 100%; 
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    outline: none;
+    margin-bottom: 2rem;
+    box-sizing: border-box; 
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #134686; 
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    align-self: flex-start;
+}
+
+.submit-btn:hover {
+    background-color: #0d2f5a; 
 }
 
 /*  Footer  */
@@ -144,6 +209,10 @@ footer .social i:hover {
 /*  Media Queries */
 @media (max-width: 767px) {
 
+    body {
+        padding: 0 20px; 
+    }
+
     .navbar {
         padding: 10px 20px;
     }
@@ -164,21 +233,23 @@ footer .social i:hover {
     }
 
     #ratingCard {
-        padding: 1rem;
+        padding: 1.5rem;
+    }
+    .star svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .feedback-wrapper {
+        align-items: center;
+    }
+    .feedback-prompt-text {
         text-align: center;
     }
-
-    #starRatingContainer {
-
-        justify-content: center;
-        gap: 0.5rem;
-
-
-        .star svg {
-            width: 35px;
-            min-width: 35px;
-        }
+    .submit-btn {
+        align-self: center;
     }
+
 }
 
 @media (min-width: 768px) {
