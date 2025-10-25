@@ -1,0 +1,184 @@
+
+body {
+    font-family: inter, sans-serif;
+}
+
+header {
+    padding: 10px;
+    text-align: right;
+    font-size: 18px;    
+}
+
+.festicon {
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+main {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.originpic {
+    width: 400px;
+    height: 250px;
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: right;
+}
+
+figure {
+   text-align: center;
+}
+
+
+
+.member {
+    display: flex;
+}
+    
+
+.category {
+    width: 700px;
+    height: 250px;
+    background-color: #f4f3f3;
+    padding: 20px;
+    box-shadow: 5px 5px 4px #c2bfbf;
+    margin: 0 auto
+    ;
+    
+    
+}
+
+.categoryhead {
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    
+}
+
+.category div {
+    
+    margin-bottom: 15px;
+   
+
+}
+
+.category-item  {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#item3 {
+    margin-top: 15px;
+}
+
+button {
+    border: none;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 1px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn-login {
+    background-color: #7BA9FF; 
+    color: black;
+}
+
+.btn-singin {
+    background-color: #FF7B7B; 
+    color: black;
+}
+
+.btn-learnmore {
+    background-color: #000000; 
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .originpic {
+        width: 39.10vw;
+        height: 24.50vw;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    .btn-learnmore {
+        border: none;
+        padding: 1.5vw 24vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 20px 1px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .member {
+        flex-direction: column;
+        align-items: right;
+    }
+    
+    .category {
+        width: 600px;
+        height: 225px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .originpic {
+        width: 100vw;
+        height: max-content;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .origin {
+        text-align: center;
+        
+    }
+
+    .member {
+        flex-direction: column;
+        align-items: right;
+    }
+
+    .btn-learnmore {
+        border: none;
+        padding: 2vw 40vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 20px 1px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+
+    .category {
+        width: 400px;
+        height: 220px;
+    }
+}
