@@ -20,15 +20,15 @@ header {
 main {
     text-align: left;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 180px;
     margin-left: 0px;
     margin-right: 0px;
 
 }
 
 .originpic {
-    width: 400px;
-    height: 250px;
+    width: 500px;
+    height: auto;
     display: block;
     margin-left: 0px;
     margin-right: 0px;
@@ -114,17 +114,18 @@ button {
 
 @media screen and (max-width: 1024px) {
     .originpic {
-        width: 39.10vw;
-        height: 24.50vw;
+        width: 49vw;
+        height: auto;
     }
 
     main {
         text-align: center;
+        margin-bottom: 140px;
     }
 
     .btn-learnmore {
         border: none;
-        padding: 1.5vw 24vw;
+        padding: 10px 17vw;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -155,9 +156,9 @@ button {
         margin-right: 0;
     }
     
-    .origin {
+    main {
         text-align: center;
-        
+        margin-bottom: 20px;
     }
 
     .member {
@@ -167,7 +168,7 @@ button {
 
     .btn-learnmore {
         border: none;
-        padding: 2vw 40vw;
+        padding: 10px 40vw;
         text-align: center;
         text-decoration: none;
         display: inline-block;
