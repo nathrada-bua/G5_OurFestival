@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Baan Brew</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baan Brew</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Beverages.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="#">
+          <img src="../resources/logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="/homepage/homepage.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
     <h1>Baan Brew</h1>
 
     <div class="menu">
@@ -32,11 +52,13 @@
     </div>
 
     <div class="pagination">
-      <span>หน้า 1/2</span>
-      <button>NEXT</button>
+      <span>หน้า 2/2</span>
+      <button><a href="Beverages_1.html" class="botton_next_page">BACK</a></button>
     </div>
+  </main>
 
-    <section class="about">
+  <footer>
+    <div class="about">
       <h2>About</h2>
       <p>
         <b>Baan Brew</b> was founded with a simple idea: to bring the warmth of Thai
@@ -49,15 +71,17 @@
         charm. Whether at a festival or street fair, Baan Brew invites everyone
         to sip, smile, and feel at home—one cup at a time.
       </p>
-    </section>
+    </div>
 
-    <section class="contact">
+    <div class="contact">
       <h2>Reach out</h2>
       <ul>
         <li><a href="mailto:example@email.com">Email</a></li>
         <li><a href="https://instagram.com/example">Instagram</a></li>
         <li><a href="https://linkedin.com/in/example">LinkedIn</a></li>
       </ul>
-    </section>
-  </body>
+    </div>
+  </footer>
+
+</body>
 </html>

@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yen Yen bamboo</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yen Yen bamboo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Beverages.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="logo">
+        <a href="#">
+          <img src="../resources/logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="/homepage/homepage.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
     <h1>Yen Yen bamboo</h1>
 
     <div class="menu">
@@ -33,10 +53,12 @@
 
     <div class="pagination">
       <span>หน้า 1/2</span>
-      <button>NEXT</button>
+      <button><a href="Beverages_2.html" class="botton_next_page">NEXT</a></button>
     </div>
+  </main>
 
-    <section class="about">
+  <footer>
+    <div class="about">
       <h2>About</h2>
       <p>
         <b>Yen Yen Bamboo</b> was born from a love of Thai herbal traditions and the
@@ -49,15 +71,17 @@
         with modern flair, inviting everyone to pause, sip, and enjoy the gentle
         breeze of Thai refreshment.
       </p>
-    </section>
+    </div>
 
-    <section class="contact">
+    <div class="contact">
       <h2>Reach out</h2>
       <ul>
         <li><a href="mailto:example@email.com">Email</a></li>
         <li><a href="https://instagram.com/example">Instagram</a></li>
         <li><a href="https://linkedin.com/in/example">LinkedIn</a></li>
       </ul>
-    </section>
-  </body>
+    </div>
+  </footer>
+
+</body>
 </html>
