@@ -64,14 +64,10 @@ header .logo img {
 .btn {
     border: none;
     padding: 7px 16px;
-    /* <-- ปรับลดขนาด padding ลงอีก */
     border-radius: 9999px;
-    /* ปรับให้โค้งมนแบบ Pill Shape */
     cursor: pointer;
     font-weight: 700;
-    /* ทำให้ตัวอักษรหนาขึ้น */
     font-size: 0.95rem;
-    /* <-- ปรับลดขนาดตัวอักษรลงอีก */
 }
 
 .login {
@@ -143,10 +139,20 @@ header .logo img {
     filter: drop-shadow(0 0 8px rgba(254, 178, 26, 0.6));
 }
 
-.emoji-container {
-    font-size: 3.5rem;
+.mascot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.5rem; 
     line-height: 1;
-    margin-top: 0;
+    margin-left: 10px;
+}
+
+.rating-mascot-image {
+    width: 6.5rem; 
+    height: 6.5rem; 
+    object-fit: contain; 
+    transition: transform 0.3s ease;
 }
 
 /* Feedback Wrapper */
@@ -208,6 +214,40 @@ header .logo img {
 
 .submit-btn:hover {
     background-color: #0d2f5a;
+}
+
+#thankYouMessage {
+    background-color: #ffffff;
+    border: 3px solid #FEB21A;
+    border-radius: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 2rem 2rem;
+    max-width: 500px; 
+    width: 90%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+}
+
+.thank-you-title {
+    font-size: 1.5rem; 
+    font-weight: 700;
+    color: #134686; 
+    margin-bottom: 0.5rem;
+}
+
+.thank-you-text {
+    font-size: 1rem; 
+    color: #ED3F27; 
+    font-weight: 500;
+}
+
+/* Utility Class for Hiding */
+.hidden {
+    display: none !important; 
 }
 
 /* Footer  */
@@ -283,8 +323,16 @@ footer .social i:hover {
         height: 35px;
     }
 
-    .emoji-container {
-        font-size: 2.5rem;
+    #thankYouMessage {
+        padding: 1.5rem 0.8rem; 
+    }
+
+    .thank-you-title {
+        font-size: 1.2rem;
+    }
+
+    .thank-you-text {
+        font-size: 0.9rem;
     }
 
     .feedback-wrapper {
