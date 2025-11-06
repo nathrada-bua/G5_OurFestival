@@ -126,7 +126,7 @@ a.text {
     margin-bottom: 10px;
 }
 
-#input-text {
+.input-text {
     width: 325px;
     height: 35px;
     border: none;
