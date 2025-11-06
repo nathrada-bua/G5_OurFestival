@@ -81,14 +81,14 @@ header .logo img {
     background: #3a75e3;
 }
 
-.signin {
+.signup {
     background: #f25b5b;
     color: white;
     text-decoration: none;
     transition: background-color 0.3s;
 }
 
-.signin:hover {
+.signup:hover {
     background: #e34c4c;
 }
 
