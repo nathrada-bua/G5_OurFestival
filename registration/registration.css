@@ -85,7 +85,6 @@ a.text {
 
 .login-container-bg {
     width: 400px;
-    height: 450px;
     background-color: #ffffff80;
     border-radius: 15px;
 }
@@ -101,7 +100,7 @@ a.text {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
-    margin-top: 35px;
+    margin-top: 25px;
     margin-bottom: 0;
 }
 
@@ -157,4 +156,12 @@ a.text {
     border-radius: 40px;
     border: none;
     font-size: 17px;
+}
+
+.text-error {
+    color: red;
+}
+
+.hide {
+    display: none;
 }

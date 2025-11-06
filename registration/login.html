@@ -38,9 +38,12 @@
 
             <div class="section1">
                 <p class="subtitle">Username</p>
-                <input type="text" class="input-text" id="username" name="username" minlength="3" maxlength="15" required>
+                <input type="text" class="input-text" id="username" name="username">
+                <p class="text-error hide" id="username-error">Username is required</p>
+
                 <p class="subtitle">Password</p>
-                <input type="text" class="input-text" id="password" name="password" required>
+                <input type="text" class="input-text" id="password" name="password">
+                <p class="text-error hide" id="password-error">Password is required</p>
                 <br>
                 <div class="remember-container">
                     <input type="checkbox" id="checkbox">
