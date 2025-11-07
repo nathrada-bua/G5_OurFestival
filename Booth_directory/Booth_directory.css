@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafaf4;
+    color: #111;
+}
+
+.header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 25px 70px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo img {
+    width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 32px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #134686;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ED3F27;
+}
+
+.nav-links .log-in:hover {
+    color: #434ee9;
+}
+
+.nav-links .sign-up:hover {
+    color: #ba311f
+}
+
+.navbar .home {
+    margin-top: 7px;
+}
+
+.navbar .about-us {
+    margin-top: 7px;
+}
+
+.navbar .log-in {
+    background-color: #4e8ef7;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    display: inline-block;
+}
+
+.navbar .sign-up {
+    background-color: #f25b5b;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    display: inline-block;
+}
+
+.menu-section {
+    padding: 40px 10%;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-section.alt {
+    background-color: #ffffff;
+}
+
+.menu-section h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.menu-item.reverse {
+    flex-direction: row;
+}
+
+.menu-item img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.menu-item .info {
+    max-width: 60%;
+}
+
+.menu-item h3 {
+    font-size: 30px
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #838383;
+}
+
+.menu-item button {
+    margin-top: 10px;
+    padding: 6px 16px;
+    border: 1px solid #000;
+    background: #000;
+    color: #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.menu-item button:hover {
+    background: #5b5b5b;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.left {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.right {
+    color: #838383;
+}
