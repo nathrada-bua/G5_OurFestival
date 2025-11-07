@@ -134,12 +134,13 @@ body {
 
 .menu-item button {
     margin-top: 10px;
-    padding: 6px 16px;
+    padding: 11px 21px;
     border: 1px solid #000;
     background: #000;
     color: #ffffff;
     border-radius: 6px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .menu-item button:hover {
@@ -161,6 +162,34 @@ footer {
     align-items: center;
     padding: 12px 0;
     border-bottom: 1px solid #ddd;
+}
+
+.btn-feedback {
+    background-color: #7BA9FF; 
+    color: black;
+    padding: 16px 26px;
+    margin: 20px 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+
+.feedbackicon {
+    width: 30px;
+    height: auto;
+    margin-right: 5px; 
+    float: left;
+}
+
+.feedback {
+    text-align: right;
+    margin-right: 150px;
+}
+
+.feedback button:hover {
+    color: #4467a8;
 }
 
 .left {
