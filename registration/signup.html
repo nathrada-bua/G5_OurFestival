@@ -10,24 +10,26 @@
 <body>
     <header class="navbar">
         <div class="image">
-            <img src="/resources/logo.png" alt="logo" id="logo">
+            <a href="../homepage/homepage.html">
+                <img src="/resources/logo.png" alt="logo" id="logo">
+            </a>
         </div>
 
         <div class="text-container">
             <div class="home">
-                <p class="text">Home</p>
+                <a href="../homepage/homepage.html" class="navbar-text1">Home</a>
             </div>
 
             <div class="about-us">
-                <p class="text">About us</p>
+                <a href="../Booth_directory/Booth_directory.html" class="navbar-text1">About us</a> 
             </div>
 
             <div class="login btn">
-                <a href="login.html" class="text">Log in</a>
+                <a href="login.html" class="navbar-text2">Log in</a>
             </div>
         
             <div class="signup btn">
-                <a href="signup.html" class="text">Sign up</a>
+                <a href="signup.html" class="navbar-text2">Sign up</a>
             </div>
         </div>
     </header>
@@ -39,12 +41,19 @@
             <div class="section1">
                 <p class="subtitle">Username</p>
                 <input type="text" class="input-text" id="username" name="username">
+                <p class="text-error hide" id="username-error">Username is required</p>
+
                 <p class="subtitle">Email</p>
                 <input type="text" class="input-text" id="email" name="email">
+                <p class="text-error hide" id="email-error">Email is required</p>
+
                 <p class="subtitle">Password</p>
                 <input type="text" class="input-text" id="password" name="password">
+                <p class="text-error hide" id="password-error">Password is required</p>
+
                 <p class="subtitle">Confirm Password</p>
                 <input type="text" class="input-text" id="confirm-password" name="confirm-password">
+                <p class="text-error hide" id="confirm-password-error">Confirm password is required</p>
             </div>
             
             <div class="section2">

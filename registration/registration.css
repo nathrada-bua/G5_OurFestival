@@ -61,15 +61,18 @@ body {
     align-items: center;
 }
 
-.text {
+a.navbar-text2 {
+    color: #fff;
+    border: 0;
+    text-decoration: none;
     margin: 0;
     font-weight: 600;
 }
 
-a.text {
-    color: #fff;
-    border: 0;
+a.navbar-text1 {
+    color: #000;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .container {
