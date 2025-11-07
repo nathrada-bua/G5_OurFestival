@@ -1,18 +1,68 @@
 
 body {
-    font-family: inter, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 a:link,
 a:visited,
 a:hover,
 a:active {
-  color: black; 
+  color: rgb(255, 255, 255); 
   text-decoration: none; 
 }
 
+header h1 {
+    color: #134686;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+    color: #ED3F27;
+}
 
 header {
+    padding: 10px 20px;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+/* Navbar  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    /* Padding สำหรับ Desktop/Tablet */
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar .logo img {
+    width: 70px;
+    transition: all 0.3s ease;
+}
+
+.navbar .right-menu {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.95rem;
+    /* <-- ปรับลดขนาดลงอีก */
+    font-weight: 700;
+    /* ปรับให้หนาขึ้น */
+    margin-right: 1rem;
+    /* ปรับลดระยะห่างด้านขวาของลิงก์ */
+}
+
+/*header {
     padding: 10px;
     text-align: right;
     font-size: 16px;  
@@ -25,6 +75,39 @@ header {
     float: left;
     margin-top: 0px;
     margin-right: 0px;
+}*/
+
+
+/* ปุ่ม */
+.btn {
+    border: none;
+    padding: 7px 16px;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.login {
+    background: #4e8ef7;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.login:hover {
+    background: #3a75e3;
+}
+
+.signup {
+    background: #f25b5b;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.signup:hover {
+    background: #e34c4c;
 }
 
 main {
@@ -118,6 +201,7 @@ figure {
 }
 
 .categoryhead {
+    color: black;
     display: flex;
     font-size: 20px;
     margin-bottom: 10px;
@@ -142,7 +226,7 @@ figure {
     margin-top: 15px;
 }
 
-button {
+/*button {
     border: none;
     padding: 5px 12px;
     text-align: center;
@@ -163,10 +247,19 @@ button {
     background-color: #FF7B7B; 
     color: black;
 }
-
+*/
 .btn-learnmore {
     background-color: #000000; 
     color: white;
+    border: none;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 1px;
+    cursor: pointer;
+    border-radius: 50px;
 }
 
 .btn-feedback {
