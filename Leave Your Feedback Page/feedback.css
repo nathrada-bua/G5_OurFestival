@@ -31,8 +31,7 @@ header .logo img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 40px;
-    /* Padding สำหรับ Desktop/Tablet */
+    padding: 20px 60px;
     background-color: #fff;
     width: 100%;
     box-sizing: border-box;
@@ -53,11 +52,16 @@ header .logo img {
     text-decoration: none;
     color: #000;
     font-size: 0.95rem;
-    /* <-- ปรับลดขนาดลงอีก */
     font-weight: 700;
-    /* ปรับให้หนาขึ้น */
     margin-right: 1rem;
-    /* ปรับลดระยะห่างด้านขวาของลิงก์ */
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.navbar nav a:hover {
+    color: #c84747;
 }
 
 /* ปุ่ม */
@@ -70,6 +74,11 @@ header .logo img {
     font-size: 0.95rem;
 }
 
+.right-menu .btn + .btn {
+    margin-left: 9px; 
+}
+
+
 .login {
     background: #4e8ef7;
     color: white;
@@ -78,7 +87,8 @@ header .logo img {
 }
 
 .login:hover {
-    background: #3a75e3;
+    color: #3a6fcc;
+    transform: scale(1.1);
 }
 
 .signup {
@@ -89,7 +99,8 @@ header .logo img {
 }
 
 .signup:hover {
-    background: #e34c4c;
+    color: #c84747;
+    transform: scale(1.1);
 }
 
 /* Rating Card  */
@@ -143,15 +154,15 @@ header .logo img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 6.5rem; 
+    height: 6.5rem;
     line-height: 1;
     margin-left: 10px;
 }
 
 .rating-mascot-image {
-    width: 6.5rem; 
-    height: 6.5rem; 
-    object-fit: contain; 
+    width: 6.5rem;
+    height: 6.5rem;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
@@ -222,32 +233,32 @@ header .logo img {
     border-radius: 1.5rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     padding: 2rem 2rem;
-    max-width: 500px; 
-    width: 90%; 
+    max-width: 500px;
+    width: 90%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0; 
+    margin: 0;
 }
 
 .thank-you-title {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     font-weight: 700;
-    color: #134686; 
+    color: #134686;
     margin-bottom: 0.5rem;
 }
 
 .thank-you-text {
-    font-size: 1rem; 
-    color: #ED3F27; 
+    font-size: 1rem;
+    color: #ED3F27;
     font-weight: 500;
 }
 
 /* Utility Class for Hiding */
 .hidden {
-    display: none !important; 
+    display: none !important;
 }
 
 /* Footer  */
@@ -270,13 +281,14 @@ footer .social {
 
 footer p {
     font-weight: 600;
+    font-size: 1rem;
 }
 
 footer .social i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #134686;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: color 0.3s,transform 0.2s;
 }
 
 footer .social i:hover {
@@ -324,7 +336,7 @@ footer .social i:hover {
     }
 
     #thankYouMessage {
-        padding: 1.5rem 0.8rem; 
+        padding: 1.5rem 0.8rem;
     }
 
     .thank-you-title {
