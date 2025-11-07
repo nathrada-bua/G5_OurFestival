@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log in Page</title>
-    <link rel="stylesheet" href="registration.css" />
-    <script src="./login.js" defer></script>
+    <title>Sign up Page</title>
+    <link rel="stylesheet" href="../css/registration.css" />
+    <script src="../js/signup.js" defer></script>
   </head>
   <body>
     <header class="navbar">
@@ -37,8 +37,8 @@
     </header>
 
     <form class="container">
-      <div class="login-container-bg">
-        <p id="title">Log in</p>
+      <div class="signup-container-bg">
+        <p id="title">Sign up</p>
 
         <div class="section1">
           <p class="subtitle">Username</p>
@@ -47,20 +47,30 @@
             Username is required
           </p>
 
+          <p class="subtitle">Email</p>
+          <input type="text" class="input-text" id="email" name="email" />
+          <p class="text-error hide" id="email-error">Email is required</p>
+
           <p class="subtitle">Password</p>
           <input type="text" class="input-text" id="password" name="password" />
           <p class="text-error hide" id="password-error">
             Password is required
           </p>
-          <br />
-          <div class="remember-container">
-            <input type="checkbox" id="checkbox" />
-            <p id="remember-info">Remember me</p>
-          </div>
+
+          <p class="subtitle">Confirm Password</p>
+          <input
+            type="text"
+            class="input-text"
+            id="confirm-password"
+            name="confirm-password"
+          />
+          <p class="text-error hide" id="confirm-password-error">
+            Confirm password is required
+          </p>
         </div>
 
         <div class="section2">
-          <button type="submit" id="loginBtn">Log in</button>
+          <button type="submit" id="loginBtn">Sign up</button>
           <p id="forgot-info">Forgot Username/Password ?</p>
         </div>
       </div>
