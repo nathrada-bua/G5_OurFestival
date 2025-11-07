@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log in Page</title>
-    <link rel="stylesheet" href="registration.css">
+    <link rel="stylesheet" href="registration.css" />
     <script src="./login.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="navbar">
-        <div class="image">
-            <a href="../homepage/homepage.html">
-                <img src="/resources/logo.png" alt="logo" id="logo">
-            </a>
+      <div class="image">
+        <a href="../homepage/homepage.html">
+          <img src="../resources/logo.png" alt="logo" id="logo" />
+        </a>
+      </div>
+
+      <div class="text-container">
+        <div class="home">
+          <a href="../homepage/homepage.html" class="navbar-text1">Home</a>
         </div>
 
-        <div class="text-container">
-            <div class="home">
-                <a href="../homepage/homepage.html" class="navbar-text1">Home</a>
-            </div>
-
-            <div class="about-us">
-                <a href="../Booth_directory/Booth_directory.html" class="navbar-text1">About us</a> 
-            </div>
-
-            <div class="login btn">
-                <a href="login.html" class="navbar-text2">Log in</a>
-            </div>
-        
-            <div class="signup btn">
-                <a href="signup.html" class="navbar-text2">Sign up</a>
-            </div>
+        <div class="about-us">
+          <a href="../Booth_directory/Booth_directory.html" class="navbar-text1"
+            >About us</a
+          >
         </div>
+
+        <div class="login btn">
+          <a href="login.html" class="navbar-text2">Log in</a>
+        </div>
+
+        <div class="signup btn">
+          <a href="signup.html" class="navbar-text2">Sign up</a>
+        </div>
+      </div>
     </header>
 
     <form class="container">
-        <div class="login-container-bg">
-            <p id="title">Log in</p>
+      <div class="login-container-bg">
+        <p id="title">Log in</p>
 
-            <div class="section1">
-                <p class="subtitle">Username</p>
-                <input type="text" class="input-text" id="username" name="username">
-                <p class="text-error hide" id="username-error">Username is required</p>
+        <div class="section1">
+          <p class="subtitle">Username</p>
+          <input type="text" class="input-text" id="username" name="username" />
+          <p class="text-error hide" id="username-error">
+            Username is required
+          </p>
 
-                <p class="subtitle">Password</p>
-                <input type="text" class="input-text" id="password" name="password">
-                <p class="text-error hide" id="password-error">Password is required</p>
-                <br>
-                <div class="remember-container">
-                    <input type="checkbox" id="checkbox">
-                    <p id="remember-info">Remember me</p>
-                </div>
-            </div>
-            
-            <div class="section2">
-                <button type="submit" id="loginBtn">Log in</button>
-                <p id="forgot-info">Forgot Username/Password ?</p>
-            </div>
+          <p class="subtitle">Password</p>
+          <input type="text" class="input-text" id="password" name="password" />
+          <p class="text-error hide" id="password-error">
+            Password is required
+          </p>
+          <br />
+          <div class="remember-container">
+            <input type="checkbox" id="checkbox" />
+            <p id="remember-info">Remember me</p>
+          </div>
         </div>
+
+        <div class="section2">
+          <button type="submit" id="loginBtn">Log in</button>
+          <p id="forgot-info">Forgot Username/Password ?</p>
+        </div>
+      </div>
     </form>
-    
-</body>
+  </body>
 </html>

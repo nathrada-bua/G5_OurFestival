@@ -1,169 +1,169 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-body {  
-    margin: 0;
-    font-family: "Inter", sans-serif;
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
 #logo {
-    width: 70px;
+  width: 70px;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10px 20px 20px;
-    background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px 20px 20px;
+  background-color: #fff;
 }
 
 .logo img {
-    width: 50px;
-    border-radius: 50%;
+  width: 50px;
+  border-radius: 50%;
 }
 
 .navbar nav a {
-    text-decoration: none;
-    color: #000;
-    font-size: 0.8rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.8rem;
 }
 
 .btn {
-    border: none;
-    padding: 6px 14px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: 500;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .btn.login {
-    background-color: #4e8ef7;
-    color: white;
-    margin: 0 15px;
+  background-color: #4e8ef7;
+  color: white;
+  margin: 0 15px;
 }
 
 .btn.signup {
-    background-color: #f25b5b;
-    color: white;
-    margin: 0 15px 0 0;
+  background-color: #f25b5b;
+  color: white;
+  margin: 0 15px 0 0;
 }
 
 .home {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .about-us {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .text-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 a.navbar-text2 {
-    color: #fff;
-    border: 0;
-    text-decoration: none;
-    margin: 0;
-    font-weight: 600;
+  color: #fff;
+  border: 0;
+  text-decoration: none;
+  margin: 0;
+  font-weight: 600;
 }
 
 a.navbar-text1 {
-    color: #000;
-    text-decoration: none;
-    font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 100px);
-    background-image: url("/resources/registration-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  background-image: url("../resources/registration-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 100;
 }
 
 .login-container-bg {
-    width: 400px;
-    background-color: #ffffff80;
-    border-radius: 15px;
+  width: 400px;
+  background-color: #ffffff80;
+  border-radius: 15px;
 }
 
 .signup-container-bg {
-    width: 400px;
-    background-color: #ffffff80;
-    border-radius: 15px;
+  width: 400px;
+  background-color: #ffffff80;
+  border-radius: 15px;
 }
 
 #title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: 25px;
-    margin-bottom: 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
-#checkbox{
-    margin-top: 15px;
-    accent-color: black;
-    transform: scale(1.5);
+#checkbox {
+  margin-top: 15px;
+  accent-color: black;
+  transform: scale(1.5);
 }
 
 .section1 {
-    margin: 0 35px 20px 35px;
+  margin: 0 35px 20px 35px;
 }
 
 .section2 {
-    text-align: center;
+  text-align: center;
 }
 
 .subtitle {
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 30px;
-    margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .input-text {
-    width: 325px;
-    height: 35px;
-    border: none;
-    border-radius: 6px;
-    font-size: 20px;
+  width: 325px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
 }
 
 #forgot-info {
-    font-size: 13px;
-    font-weight: 600;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .remember-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #remember-info {
-    font-weight: 600;
-    margin: 14px 0 0 10px;
+  font-weight: 600;
+  margin: 14px 0 0 10px;
 }
 
 #loginBtn {
-    background-color: #4e8ef7;
-    color: #fff;
-    margin-top: 10px;
-    padding: 12px 28px;
-    border-radius: 40px;
-    border: none;
-    font-size: 17px;
+  background-color: #4e8ef7;
+  color: #fff;
+  margin-top: 10px;
+  padding: 12px 28px;
+  border-radius: 40px;
+  border: none;
+  font-size: 17px;
 }
 
 .text-error {
-    color: red;
+  color: red;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
