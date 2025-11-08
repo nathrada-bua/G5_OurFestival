@@ -5,36 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up Page</title>
     <link rel="stylesheet" href="../css/registration.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="../js/signup.js" defer></script>
   </head>
   <body>
     <header class="navbar">
-      <div class="image">
-        <a href="../homepage/homepage.html">
-          <img src="../resources/logo.png" alt="logo" id="logo" />
-        </a>
-      </div>
-
-      <div class="text-container">
-        <div class="home">
-          <a href="../homepage/homepage.html" class="navbar-text1">Home</a>
+        <div class="logo">
+            <a href="../html/homepage.html">
+                <img src="../resources/logo.png" alt="Logo" class="w-12 md:w-14">
+            </a>
         </div>
 
-        <div class="about-us">
-          <a href="../Booth_directory/Booth_directory.html" class="navbar-text1"
-            >About us</a
-          >
+        <div class="right-menu">
+            <nav class="flex items-center gap-4">
+                <a href="../html/homepage.html">Home</a>
+                <a href="../html/Booth_directory.html">About Us</a>
+            </nav>
+            <div class="flex gap-2">
+                <a href="../html/login.html" class="btn login flex items-center justify-center">log in</a>
+                <a href="../html/signup.html" class="btn signup flex items-center justify-center">sign up</a>
+            </div>
         </div>
-
-        <div class="login btn">
-          <a href="login.html" class="navbar-text2">Log in</a>
-        </div>
-
-        <div class="signup btn">
-          <a href="signup.html" class="navbar-text2">Sign up</a>
-        </div>
-      </div>
-    </header>
+    </header> 
 
     <form class="container">
       <div class="signup-container-bg">
