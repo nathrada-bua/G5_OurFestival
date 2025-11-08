@@ -1,87 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baan Brew</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/Beverages.css">
-</head>
-<body>
-
-  <header class="navbar">
-    <div class="navbar-container">
-      <div class="logo">
-        <a href="#">
-          <img src="../resources/logo.png" alt="Logo">
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baan Brew</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/Beverages.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <a href="#">
+            <img src="../resources/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="flex gap-2">
+          <nav class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="Booth_directory.html">About Us</a>
+          </nav>
+          <a
+            href="../html/login.html"
+            class="btn login flex items-center justify-center"
+            >log in</a
+          >
+          <a
+            href="../html/signup.html"
+            class="btn signup flex items-center justify-center"
+            >sign up</a
+          >
+        </div>
       </div>
-      <nav class="nav-links">
-        <a href="homepage.html">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Menu</a>
-        <a href="#">Contact</a>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <h1>Baan Brew</h1>
+    <main>
+      <h1>Baan Brew</h1>
 
-    <div class="menu">
-      <div class="item">
-        <img src="../resources/Beverages-2 Pink Milk.jpg" alt="Pink Milk" />
-        <p class="name">Pink Milk</p>
-        <p class="price">40 ฿</p>
+      <div class="menu">
+        <div class="item">
+          <img src="../resources/Beverages-2 Pink Milk.jpg" alt="Pink Milk" />
+          <p class="name">Pink Milk</p>
+          <p class="price">40 ฿</p>
+        </div>
+        <div class="item">
+          <img
+            src="../resources/Beverages-2 Thai Milk Tea.jpg"
+            alt="Thai Milk Tea"
+          />
+          <p class="name">Thai Milk Tea</p>
+          <p class="price">40 ฿</p>
+        </div>
+        <div class="item">
+          <img src="../resources/Beverages-2 Iced Cocoa.png" alt="Iced Cocoa" />
+          <p class="name">Iced Cocoa</p>
+          <p class="price">45 ฿</p>
+        </div>
+        <div class="item">
+          <img
+            src="../resources/Beverages-2 Caramel Fresh Milk.jpg"
+            alt="Caramel Fresh Milk"
+          />
+          <p class="name">Caramel Fresh Milk</p>
+          <p class="price">45 ฿</p>
+        </div>
       </div>
-      <div class="item">
-        <img src="../resources/Beverages-2 Thai Milk Tea.jpg" alt="Thai Milk Tea" />
-        <p class="name">Thai Milk Tea</p>
-        <p class="price">40 ฿</p>
+
+      <div class="pagination">
+        <span>หน้า 2/2</span>
+        <button>
+          <a href="Beverages_1.html" class="botton_next_page">BACK</a>
+        </button>
       </div>
-      <div class="item">
-        <img src="../resources/Beverages-2 Iced Cocoa.png" alt="Iced Cocoa" />
-        <p class="name">Iced Cocoa</p>
-        <p class="price">45 ฿</p>
-      </div>
-      <div class="item">
-        <img src="../resources/Beverages-2 Caramel Fresh Milk.jpg" alt="Caramel Fresh Milk" />
-        <p class="name">Caramel Fresh Milk</p>
-        <p class="price">45 ฿</p>
-      </div>
-    </div>
+    </main>
 
-    <div class="pagination">
-      <span>หน้า 2/2</span>
-      <button><a href="Beverages_1.html" class="botton_next_page">BACK</a></button>
-    </div>
-  </main>
-
-  <footer>
-    <div class="about">
-      <h2>About</h2>
-      <p>
-        <b>Baan Brew</b> was founded with a simple idea: to bring the warmth of Thai
-        flavors into every cup. “Baan” means home in Thai, and the stall
-        reflects a cozy, welcoming vibe inspired by traditional Thai
-        hospitality. Specializing in milk-based drinks, Baan Brew offers
-        comforting classics like Thai Milk Tea, Pink Milk, Iced Cocoa, and
-        Caramel Fresh Milk. Each drink is crafted with care, using quality
-        ingredients and familiar flavors that evoke childhood memories and local
-        charm. Whether at a festival or street fair, Baan Brew invites everyone
-        to sip, smile, and feel at home—one cup at a time.
-      </p>
-    </div>
-
-    <div class="contact">
-      <h2>Reach out</h2>
-      <ul>
-        <li><a href="mailto:example@email.com">Email</a></li>
-        <li><a href="https://instagram.com/example">Instagram</a></li>
-        <li><a href="https://linkedin.com/in/example">LinkedIn</a></li>
-      </ul>
-    </div>
-  </footer>
-
-</body>
+    <footer>
+        <p>© 2025 Eatfinity Fair</p>
+        <div class="social flex gap-4">
+            <i class="fas fa-envelope"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-tiktok"></i>
+        </div>
+    </footer>
+  </body>
 </html>

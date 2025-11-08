@@ -11,12 +11,12 @@ html, body {
   color: #333;
 }
 
-/* Header ครอบคลุมเต็มหน้าจอ */
+/* Navbar */
 .navbar {
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  position: static; /* ไม่เลื่อนตาม scroll */
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: static;
   z-index: 1000;
 }
 
@@ -25,83 +25,102 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 16px 40px;
-  width: 100%;
-  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
-/* โลโก้ */
 .logo img {
   width: 70px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s;
 }
-
 .logo img:hover {
   transform: scale(1.05);
 }
 
-/* เมนู */
-.nav-links {
+.flex {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
+.nav-links {
+  display: flex;
+  gap: 12px;
+}
 .nav-links a {
   text-decoration: none;
   color: #134686;
   font-weight: 600;
   font-size: 0.95rem;
-  transition: color 0.3s ease;
+  transition: color 0.3s;
 }
-
 .nav-links a:hover {
   color: #ED3F27;
 }
 
-/* Responsive สำหรับมือถือ */
-@media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px 20px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 10px;
-  }
+.btn, .login, .signup {
+  border: none;
+  padding: 7px 16px;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  line-height: normal;
 }
 
-/* เนื้อหา */
+.login {
+  background: #4e8ef7;
+  color: white;
+}
+.login:hover {
+  color: #3a6fcc;
+  transform: scale(1.1);
+}
+
+.signup {
+  background: #f25b5b;
+  color: white;
+}
+.signup:hover {
+  color: #c84747;
+  transform: scale(1.1);
+}
+
+/* Heading */
 h1 {
   text-align: center;
   font-size: 2.5rem;
   margin: 30px 0;
-  color: #6d4c41;
+  color: #333;
 }
 
+/* Menu Grid */
 .menu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 0 20px;
   margin-bottom: 40px;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .item {
-  background-color: #ffffff;
+  background: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
-
 .item:hover {
   transform: scale(1.03);
 }
-
 .item img {
   width: 100%;
   height: 280px;
@@ -113,14 +132,14 @@ h1 {
 .name {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #8d6e63;
+  color: #333;
 }
-
 .price {
   font-size: 1rem;
   color: #555;
 }
 
+/* Pagination */
 .pagination {
   display: flex;
   justify-content: center;
@@ -128,72 +147,174 @@ h1 {
   gap: 15px;
   margin-bottom: 50px;
 }
-
 .pagination span {
   font-size: 1rem;
   color: #666;
 }
-
 .pagination button {
   padding: 8px 16px;
-  background-color: #a1887f;
-  color: white;
+  background: #a1887f;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
-
-.botton_next_page {
-  color: white;
-  text-decoration: none;
-}
-
 .pagination button:hover {
-  background-color: #8d6e63;
+  background: #8d6e63;
+}
+.botton_next_page {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Footer */
 footer {
-  background-color: #f0dbd4;
-  padding: 40px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-  border-top: 2px solid #c8b6b1;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-footer .about,
-footer .contact {
-  flex: 1 1 300px;
-  max-width: 600px;
-}
-
-footer h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #6d4c41;
+footer .social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 footer p {
-  font-size: 1rem;
-  color: #444;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
-footer ul {
-  list-style: none;
-  padding-left: 0;
+footer .social i {
+    font-size: 2rem;
+    color: #134686;
+    cursor: pointer;
+    transition: color 0.3s,transform 0.2s;
 }
 
-footer li {
-  margin-bottom: 8px;
+footer .social i:hover {
+    color: #ED3F27;
 }
 
-footer a {
-  color: #4e342e;
-  text-decoration: none;
+/* Media Queries */
+@media (max-width: 767px) {
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar nav a {
+        font-size: 0.8rem;
+        margin-right: 0.8rem;
+    }
+
+    .btn {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+        border-radius: 9999px;
+    }
+
+    .main-content-wrapper {
+        padding: 20px 20px;
+    }
+
+    .navbar .logo img {
+        width: 70px;
+    }
+
+    .navbar .right-menu {
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+
+    #ratingCard {
+        padding: 1.5rem;
+    }
+
+    .star svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    #thankYouMessage {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .thank-you-title {
+        font-size: 1.2rem;
+    }
+
+    .thank-you-text {
+        font-size: 0.9rem;
+    }
+
+    .feedback-wrapper {
+        align-items: center;
+    }
+
+    .feedback-prompt-text {
+        text-align: center;
+    }
+
+    .submit-btn {
+        align-self: center;
+    }
+
+    footer {
+        padding: 40px 20px;
+    }
 }
 
-footer a:hover {
-  text-decoration: underline;
+/* Responsive Layout */
+@media (min-width: 600px) {
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    flex-wrap: wrap;
+  }
+
+  .flex {
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 0;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    width: auto;
+    min-width: 80px;
+    height: 32px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
