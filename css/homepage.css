@@ -198,6 +198,7 @@ figure {
     box-shadow: 5px 5px 4px #c2bfbf;
     margin: 0 auto;
     margin-top: 50px;
+    color: black;
 }
 
 .categoryhead {
@@ -212,6 +213,7 @@ figure {
 .category div {
     
     margin-bottom: 15px;
+    
    
 
 }
@@ -220,6 +222,13 @@ figure {
     display: flex;
     text-align: center;
     justify-content: space-around;
+}
+
+.item:hover
+.item:link,
+.item:visited,
+.item:active {
+    color: black;
 }
 
 #item3 {
@@ -281,6 +290,38 @@ figure {
 .feedback {
     text-align: right;
     margin-right: 20px;
+}
+
+footer {
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer .social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+footer p {
+    font-weight: 600;
+}
+
+footer .social i {
+    font-size: 1.5rem;
+    color: #134686;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+footer .social i:hover {
+    color: #ED3F27;
 }
 
 @media screen and (max-width: 1024px) {
