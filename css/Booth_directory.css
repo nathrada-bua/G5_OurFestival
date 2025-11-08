@@ -19,7 +19,7 @@ body {
 }
 
 .logo img {
-    width: 80px;
+    width: 70px;
     transition: transform 0.3s ease;
 }
 
@@ -36,9 +36,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 32px;
+    padding: 20px 60px;
     background: #fff;
     border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
 }
 
 .nav-links a {
@@ -141,19 +142,25 @@ body {
     border-radius: 6px;
     cursor: pointer;
     font-size: 15px;
+    transition: background-color 0.2s ease;
 }
 
 .menu-item button:hover {
-    background: #5b5b5b;
+    background-color: #5f5f5f;
     color: #ffffff;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 40px 60px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
     background: #fff;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
     font-size: 14px;
+    width: 100%;
 }
 
 .item {
@@ -167,13 +174,13 @@ footer {
 .btn-feedback {
     background-color: #7BA9FF; 
     color: black;
-    padding: 16px 26px;
+    padding: 10px 20px;
     margin: 20px 1px;
     cursor: pointer;
     border-radius: 5px;
     align-items: center;
     font-size: 25px;
-    transition: color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 .feedbackicon {
@@ -189,14 +196,66 @@ footer {
 }
 
 .feedback button:hover {
-    color: #3e5f9c;
+    background-color: #6a84f6;
 }
 
-.left {
-    font-weight: bold;
-    font-size: 18px;
+footer .social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
-.right {
-    color: #838383;
+footer p {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+footer .social i {
+    font-size: 2rem;
+    color: #134686;
+    cursor: pointer;
+    transition: color 0.3s,transform 0.2s;
+}
+
+footer .social i:hover {
+    color: #ED3F27;
+}
+
+@media (max-width: 767px) {
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar nav a {
+        font-size: 0.8rem;
+        margin-right: 0.8rem;
+    }
+
+    .btn {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+        border-radius: 9999px;
+    }
+
+    .navbar .logo img {
+        width: 70px;
+    }
+
+    footer {
+        padding: 40px 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar nav a {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar .logo img {
+        width: 75px;
+    }
 }
