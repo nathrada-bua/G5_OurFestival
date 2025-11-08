@@ -239,7 +239,19 @@ header .logo img {
     .navbar .right-menu {
         flex-wrap: nowrap;
         gap: 5px;
-    }  
+    }
+
+    #title {
+      font-size: 25px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+    }
+
+    #remember-info {
+      font-size: 15px;
+    }
 }
 
 @media (min-width: 768px) {
