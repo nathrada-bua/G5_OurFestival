@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aroi Thai</title>
     <link rel="stylesheet" href="../css/food_Menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    
-    <div class="header">
+    <header class="navbar">
         <div class="logo">
-            <a href="#">
-                <img src="../resources/logo.png" alt="Logo">
+            <a href="../html/homepage.html">
+                <img src="../resources/logo.png" alt="Logo" class="w-12 md:w-14">
             </a>
         </div>
-    </div>
+        <div class="right-menu">
+            <nav class="flex items-center gap-4">
+                <a href="../html/homepage.html">Home</a>
+                <a href="../html/Booth_directory.html">About Us</a>
+            </nav>
+            <div class="flex gap-2">
+                <a href="../html/login.html" class="btn login flex items-center justify-center">log in</a>
+                <a href="../html/signup.html" class="btn signup flex items-center justify-center">sign up</a>
+            </div>
+        </div>
+    </header><br>
 
     <h1>Aroi Thai</h1>
     <div class="menu">
@@ -45,25 +55,24 @@
         <span>2/2</span>
         <button><a href="food_Menu-1.html">BACK</a></button>
     </div>
+    <div class="foot-container">
+        <div class="foot-about">
+            <h3>About</h3>
+            <p>
+                Experience the bold and vibrant flavors of Thailand!<br>
+                From spicy stir-fried basil pork to refreshing glass noodle salad,<br>
+                every dish is made fresh and full of authentic Thai taste.
+            </p>
+        </div>
+    </div>
+    
     <footer>
-        <div class="footer-container">
-            <div class="footer-about">
-                <h3>About</h3>
-                <p>
-                    Experience the bold and vibrant flavors of Thailand!<br>
-                    From spicy stir-fried basil pork to refreshing glass noodle salad,<br>
-                    every dish is made fresh and full of authentic Thai taste.
-                </p>
-            </div>
-
-            <div class="footer-contact">
-                <h3>Reach out</h3>
-                <ul>
-                    <li><a href="#">Email</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </div>
+        <p>© 2025 Eatfinity Fair</p>
+        <div class="social flex gap-4">
+            <i class="fas fa-envelope"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-tiktok"></i>
         </div>
     </footer>
 
