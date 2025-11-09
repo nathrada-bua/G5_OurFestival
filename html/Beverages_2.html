@@ -8,35 +8,32 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="../css/Beverages.css" />
   </head>
   <body>
     <header class="navbar">
-      <div class="navbar-container">
         <div class="logo">
-          <a href="#">
-            <img src="../resources/logo.png" alt="Logo" />
-          </a>
+            <a href="../html/homepage.html">
+                <img src="../resources/logo.png" alt="Logo" class="w-12 md:w-14">
+            </a>
         </div>
-        <div class="flex gap-2">
-          <nav class="nav-links">
-            <a href="homepage.html">Home</a>
-            <a href="Booth_directory.html">About Us</a>
-          </nav>
-          <a
-            href="../html/login.html"
-            class="btn login flex items-center justify-center"
-            >log in</a
-          >
-          <a
-            href="../html/signup.html"
-            class="btn signup flex items-center justify-center"
-            >sign up</a
-          >
+
+        <div class="right-menu">
+            <nav class="flex items-center gap-4">
+                <a href="../html/homepage.html">Home</a>
+                <a href="../html/Booth_directory.html">About Us</a>
+            </nav>
+            <div class="flex gap-2">
+                <a href="../html/login.html" class="btn login flex items-center justify-center">log in</a>
+                <a href="../html/signup.html" class="btn signup flex items-center justify-center">sign up</a>
+            </div>
+
         </div>
-      </div>
-    </header>
+    </header><br>
 
     <main>
       <h1>Baan Brew</h1>
@@ -70,22 +67,37 @@
         </div>
       </div>
 
-      <div class="pagination">
-        <span>หน้า 2/2</span>
-        <button>
-          <a href="Beverages_1.html" class="botton_next_page">BACK</a>
-        </button>
-      </div>
+      <div class="change_page">
+        <span>1/2</span>
+        <button><a href="Beverages_1.html">NEXT</a></button>
+    </div>
     </main>
 
+    <div class="foot-container">
+      <div class="foot-about">
+        <h3>About</h3>
+        <p>
+          was founded with a simple idea: to bring the warmth of Thai flavors
+          into every cup. “Baan” means home in Thai, and the stall reflects a
+          cozy, welcoming vibe inspired by traditional Thai hospitality.
+          Specializing in milk-based drinks, Baan Brew offers comforting
+          classics like Thai Milk Tea, Pink Milk, Iced Cocoa, and Caramel Fresh
+          Milk. Each drink is crafted with care, using quality ingredients and
+          familiar flavors that evoke childhood memories and local charm.
+          Whether at a festival or street fair, Baan Brew invites everyone to
+          sip, smile, and feel at home—one cup at a time.
+        </p>
+      </div>
+    </div>
+
     <footer>
-        <p>© 2025 Eatfinity Fair</p>
-        <div class="social flex gap-4">
-            <i class="fas fa-envelope"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-tiktok"></i>
-        </div>
+      <p>© 2025 Eatfinity Fair</p>
+      <div class="social flex gap-4">
+        <i class="fas fa-envelope"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
     </footer>
   </body>
 </html>
