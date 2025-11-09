@@ -115,9 +115,18 @@ body {
 .menu-item img {
     width: 300px;
     height: 300px;
-    border: 1px solid #000;
-    border-radius: 8px;
     background-color: #fff;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.menu-item img:hover {
+  transform: scale(1.03);
 }
 
 .menu-item .info {
@@ -172,7 +181,7 @@ footer {
 }
 
 .btn-feedback {
-    background-color: #7BA9FF; 
+    background-color: #7BA9FF;
     color: black;
     padding: 10px 20px;
     margin: 20px 1px;
@@ -186,7 +195,7 @@ footer {
 .feedbackicon {
     width: 30px;
     height: auto;
-    margin-right: 5px; 
+    margin-right: 5px;
     float: left;
 }
 
@@ -215,7 +224,7 @@ footer .social i {
     font-size: 2rem;
     color: #134686;
     cursor: pointer;
-    transition: color 0.3s,transform 0.2s;
+    transition: color 0.3s, transform 0.2s;
 }
 
 footer .social i:hover {
