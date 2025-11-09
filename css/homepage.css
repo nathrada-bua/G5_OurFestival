@@ -307,14 +307,14 @@ figure {
     margin-right: 20px;
 }
 
-/* Footer */
+/* Footer  */
 footer {
     padding: 40px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid #ddd;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -327,13 +327,14 @@ footer .social {
 
 footer p {
     font-weight: 600;
+    font-size: 1rem;
 }
 
 footer .social i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #134686;
     cursor: pointer;
-    transition: color 0.3s;
+    transition: color 0.3s,transform 0.2s;
 }
 
 footer .social i:hover {
@@ -501,5 +502,63 @@ footer .social i:hover {
 
 .signup:hover {
     background: #e34c4c;
+}
+
+
+footer {
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer .social {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 10px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+footer .social i {
+    font-size: 2rem;
+    color: #134686;
+    cursor: pointer;
+    transition: color 0.3s,transform 0.2s;
+}
+
+footer .social i:hover {
+    color: #ED3F27;
+}
+
+.feedbacks {
+    
+    background: #4e8ef7;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+.feedbackicon {
+    width: 23px;
+    height: auto;
+    margin-right: 5px;
+    position: relative;
+    top: 7px;
 }
 }
