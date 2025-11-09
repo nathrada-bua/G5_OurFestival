@@ -95,10 +95,18 @@ body {
     background-color: #ffffff;
 }
 
+.menu-section.alt .info {
+    padding: 10px 20px;
+}
+
 .menu-section h2 {
     text-align: center;
     font-size: 50px;
     margin-bottom: 30px;
+}
+
+.menu-section .info {
+    margin-right: 100px;
 }
 
 .menu-item {
@@ -112,9 +120,13 @@ body {
     flex-direction: row;
 }
 
+.menu-item.reverse .info {
+    margin-left: 100px;
+}
+
 .menu-item img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background-color: #fff;
     background: #fff;
     border: 1px solid #e0e0e0;
@@ -161,15 +173,14 @@ body {
 
 footer {
     text-align: center;
-    padding: 40px 60px;
-    margin-top: 10px;
+    padding: 10px 60px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     background: #fff;
     border-top: 1px solid #ddd;
     box-sizing: border-box;
     font-size: 14px;
-    width: 100%;
 }
 
 .item {
@@ -183,7 +194,7 @@ footer {
 .btn-feedback {
     background-color: #7BA9FF;
     color: black;
-    padding: 10px 20px;
+    padding: 5px 15px;
     margin: 20px 1px;
     cursor: pointer;
     border-radius: 5px;
@@ -218,6 +229,7 @@ footer p {
     font-weight: 600;
     font-size: 1rem;
     margin-top: 40px;
+    margin-right: 100px;
 }
 
 footer .social i {
