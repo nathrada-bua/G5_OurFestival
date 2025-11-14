@@ -152,15 +152,52 @@ h1 {
   font-weight: 600;
 }
 
-button a {
-  text-decoration: none;
-  color: #333;
-  font-size: 0.95rem;
+.pager-wrapper{
+  padding-top: 60px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.change_page {
-  text-align: center;
-  margin: 30px 0 60px 0;
+.pager-line{
+  flex: 1 1 0;
+  height: 1px;
+  background: #e6e6e6;
+}
+
+.pager-center{
+  padding-left: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pager-page{
+  font-size: 18px;
+  color: #222;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.pager-next{
+  border: none;
+  padding: 8px 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #1d5cdb;          /* สีน้ำเงิน */
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.12); /* เงาเล็กน้อยเหมือนปุ่มยกขึ้น */
+  cursor: pointer;
+}
+
+.pager-next a{
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .foot-container {
