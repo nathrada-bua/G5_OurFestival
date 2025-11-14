@@ -176,10 +176,53 @@ button a {
   margin-bottom: 10px;
 }
 
+.footer-contact ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-contact li {
+  margin-bottom: 6px;
+}
+
+.footer-contact a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+}
+
 .foot-about p {
   color: #666;
   line-height: 1.5;
   font-size: 0.95rem;
+}
+
+.btn-feedback {
+    background-color: #7BA9FF;
+    color: black;
+    padding: 5px 15px;
+    margin: 20px 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+    font-size: 25px;
+    transition: background-color 0.2s ease;
+}
+
+.feedbackicon {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+    float: left;
+}
+
+.feedback {
+    text-align: right;
+    margin-right: 150px;
+}
+
+.feedback button:hover {
+    background-color: #6a84f6;
 }
 
 /* Footer  */
