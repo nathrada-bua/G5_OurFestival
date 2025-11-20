@@ -1,3 +1,28 @@
+<?php
+$users_file = 'users.json';
+$result_html = '';
+
+if (file_exists($users_file)) {
+  $records = json_decode(file_get_contents($users_file), true) ?? [];
+} else {
+  $records = [];
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $name  = trim($_POST['name']  ?? '');
+  $email = trim($_POST['email'] ?? '');
+  $city  = trim($_POST['city']  ?? '');
+
+  if ($name && $email && $city) {
+    $records[] = ['name' => $name, 'email' => $email, 'city' => $city];
+    file_put_contents($dataFile, json_encode($records, JSON_PRETTY_PRINT));
+  } else {
+    $error = 'Please fill in all fields!';
+  }
+} else {
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -70,3 +95,7 @@
     </form>
   </body>
 </html>
+
+<?php
+}
+?>
