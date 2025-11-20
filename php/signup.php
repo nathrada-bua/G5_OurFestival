@@ -191,7 +191,7 @@ if ($result == 'signup')
 <?php
 } else {
 ?>
-  <table>
+  <table class="table-list">
     <thead>
       <tr>
         <td>Username</td>
