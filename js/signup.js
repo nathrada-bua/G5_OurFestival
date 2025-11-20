@@ -10,6 +10,7 @@ const confirmPasswordErrorText = document.getElementById('confirm-password-error
 const icon = document.getElementById("icon");
 const icons = ["../resources/Project_Mascot_Default.png", "../resources/Project_Mascot_4.png", "../resources/Project_Mascot_5.png"];
 
+/*
 signUpButton.addEventListener("click", (event) => {
     event.preventDefault();
     
@@ -46,6 +47,7 @@ signUpButton.addEventListener("click", (event) => {
         usernameErrorText.classList.add("hide");
     }
 });
+*/
 
 // Mascot animation
 let i = 0;

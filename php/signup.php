@@ -1,28 +1,3 @@
-<?php
-$users_file = 'users.json';
-$result_html = '';
-
-if (file_exists($users_file)) {
-  $records = json_decode(file_get_contents($users_file), true) ?? [];
-} else {
-  $records = [];
-}
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  $name  = trim($_POST['name']  ?? '');
-  $email = trim($_POST['email'] ?? '');
-  $city  = trim($_POST['city']  ?? '');
-
-  if ($name && $email && $city) {
-    $records[] = ['name' => $name, 'email' => $email, 'city' => $city];
-    file_put_contents($dataFile, json_encode($records, JSON_PRETTY_PRINT));
-  } else {
-    $error = 'Please fill in all fields!';
-  }
-} else {
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -48,32 +23,139 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </nav>
             <div class="flex gap-2">
                 <a href="../html/login.html" class="btn login flex items-center justify-center">log in</a>
-                <a href="../html/signup.html" class="btn signup flex items-center justify-center">sign up</a>
+                <a href="./signup.php" class="btn signup flex items-center justify-center">sign up</a>
             </div>
         </div>
-    </header> 
+    </header>
 
-    <form class="container">
+<?php
+$users_file = '../data/users.json';
+$result_html = '';
+
+if (file_exists($users_file)) {
+  $records = json_decode(file_get_contents($users_file), true) ?? [];
+} else {
+  $records = [];
+}
+
+$result = 'signup';
+$error = [];
+$username = '';
+$email    = '';
+$password = '';
+$confirm  = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $username = trim($_POST['username'] ?? '');
+  $email    = trim($_POST['email'] ?? '');
+  $password = trim($_POST['password'] ?? '');
+  $confirm  = trim($_POST['confirm-password'] ?? '');
+
+  if ($username == '')
+  {
+    $error['username'] = 'Username is required';
+  }
+
+  if ($email == '')
+  {
+    $error['email'] = 'Email is required';
+  }
+
+  if ($password == '')
+  {
+    $error['password'] = 'Password is required';
+  }
+
+  if ($confirm == '')
+  {
+    $error['confirm'] = 'Confirm password is required';
+  }
+
+  if ($confirm != $password)
+  {
+    $error['confirm'] = 'Confirm password is not the same as password';
+  }
+
+  if (count($error) == 0) {
+    foreach($records as $record) {
+      if($record['username'] == $username){
+        $error['username'] = 'Username already exist';
+      }
+
+      if($record['email'] == $email){
+        $error['email'] = 'Email already exist';
+      }
+    }
+    if (count($error) == 0) {
+      $records[] = ['username' => $username, 'email' => $email, 'password' => $password];
+
+      file_put_contents($users_file, json_encode($records, JSON_PRETTY_PRINT));
+      $result = 'userslist';
+    }
+  }
+} 
+
+if ($result == 'signup')
+{
+?>
+    <form class="container" method="POST" action="signup.php">
       <img id="icon" src="../resources/Project_Mascot_Default.png" alt="mascot" width="100px">
       <div class="registration-container-bg">
         <p id="title">Sign up</p>
 
         <div class="section1">
           <p class="subtitle">Username</p>
-          <input type="text" class="input-text" id="username" name="username" />
-          <p class="text-error hide" id="username-error">
-            Username is required
+          <input type="text" class="input-text" id="username" name="username" value="<?php echo $username; ?>" />
+          
+          <?php 
+            if(array_key_exists('username', $error)) { 
+          ?>
+          <p class="text-error">
+
+          <?php 
+            echo $error['username'];
+          ?>
+
           </p>
+
+          <?php
+          }
+          ?>
+          
 
           <p class="subtitle">Email</p>
-          <input type="text" class="input-text" id="email" name="email" />
-          <p class="text-error hide" id="email-error">Email is required</p>
+          <input type="text" class="input-text" id="email" name="email" value="<?php echo $email; ?>"/>
+          <?php 
+            if(array_key_exists('email', $error)) { 
+          ?>
+          <p class="text-error">
+
+          <?php 
+            echo $error['email'];
+          ?>
+
+          </p>
+
+          <?php
+          }
+          ?>
 
           <p class="subtitle">Password</p>
-          <input type="text" class="input-text" id="password" name="password" />
-          <p class="text-error hide" id="password-error">
-            Password is required
+          <input type="text" class="input-text" id="password" name="password" value="<?php echo $password; ?>"/>
+          <?php 
+            if(array_key_exists('password', $error)) { 
+          ?>
+          <p class="text-error">
+
+          <?php 
+            echo $error['password'];
+          ?>
+
           </p>
+
+          <?php
+          }
+          ?>
 
           <p class="subtitle">Confirm Password</p>
           <input
@@ -81,21 +163,69 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             class="input-text"
             id="confirm-password"
             name="confirm-password"
+            value="<?php echo $confirm; ?>"
           />
-          <p class="text-error hide" id="confirm-password-error">
-            Confirm password is required
+          <?php 
+            if(array_key_exists('confirm', $error)) { 
+          ?>
+          <p class="text-error">
+
+          <?php 
+            echo $error['confirm'];
+          ?>
+
           </p>
+
+          <?php
+          }
+          ?>
         </div>
 
         <div class="section2">
-          <button type="submit" id="loginBtn">Sign up</button>
+          <input type="submit" id="loginBtn" value="Sign up"/>
           <p id="forgot-info">Forgot Username/Password ?</p>
         </div>
       </div>
     </form>
-  </body>
-</html>
+  
+<?php
+} else {
+?>
+  <table>
+    <thead>
+      <tr>
+        <td>Username</td>
+        <td>Email</td>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+        foreach ($records as $record) {
+
+      ?>
+      <tr>
+        <td>
+          <?php
+          echo $record['username'];
+          ?>
+        </td>
+        <td>
+          <?php
+          echo $record['email'];
+          ?>
+        </td>
+      </tr>
+      <?php
+      }
+      ?>
+    </tbody>
+  </table>
 
 <?php
 }
 ?>
+
+</body>
+</html>
+
+
