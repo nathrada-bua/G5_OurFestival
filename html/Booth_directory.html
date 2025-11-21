@@ -14,16 +14,21 @@
     <header class="navbar">
         <div class="logo">
             <a href="../html/homepage.html">
-                <img src="../resources/logo.png" alt="Logo">
+                <img src="../resources/logo.png" alt="Logo" class="w-12 md:w-14">
             </a>
         </div>
-        <nav class="nav-links">
-            <a class="home" href="../html/homepage.html">Home</a>
-            <a class="about-us" href="../html/Booth_directory.html">About us</a>
-            <a class="log-in" href="../html/login.html">Log in</a>
-            <a class="sign-up" href="../php/signup.php">Sign up</a>
-        </nav>
-    </header>
+
+        <div class="right-menu">
+            <nav class="flex items-center gap-4">
+                <a href="../html/homepage.html">Home</a>
+                <a href="../html/Booth_directory.html">About Us</a>
+            </nav>
+            <div class="flex gap-2">
+                <a href="../html/login.html" class="btn login flex items-center justify-center">log in</a>
+                <a href="../html/signup.html" class="btn signup flex items-center justify-center">sign up</a>
+            </div>
+        </div>
+    </header><br>
 
     <section class="menu-section">
         <h2 id="foodhead">Foods</h2>
@@ -116,19 +121,23 @@
         </div>
     </section>
 
-    <footer>
-        <div class="feedback">
-            <a href="../html/feedback.html"><button class="btn-feedback"><img
-                        src="../resources/feedback.png" class="feedbackicon">feedback</button></a>
-        </div>
-        <p>© 2025 Eatfinity Fair</p>
-        <div class="social flex gap-4">
-            <i class="fas fa-envelope"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-tiktok"></i>
-        </div>
-    </footer>
+    <footer class="footer">
+    <div class="footer-left">
+        <a href="../html/feedback.html" class="feedback-btn">
+            <img src="../resources/feedback.png" class="feedbackicon">
+            Feedback
+        </a>
+    </div>
+
+    <p class="footer-center">© 2025 Eatfinity Fair</p>
+
+    <div class="footer-right social">
+        <i class="fas fa-envelope"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-tiktok"></i>
+    </div>
+</footer>
 </body>
 
 </html>
