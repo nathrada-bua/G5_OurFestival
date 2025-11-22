@@ -37,6 +37,11 @@
         <form id="ratingCard" method="POST">
             <h1 class="rate-us-title">Rate us!</h1>
 
+            <div id="errorMessage" class="error-message hidden">
+                <i class="fas fa-exclamation-circle"></i> 
+                <span id="errorText">Please select a rating.</span>
+            </div>
+
             <div class="rating-stars-and-emoji">
                 <div class="star-rating" id="starRating">
                     <div class="star" data-rating="1"></div>
@@ -57,17 +62,32 @@
 
                 <p id="feedbackText" class="feedback-prompt-text">Feel free to leave your feedback! :D</p>
 
-                <textarea id="comment" name="comment" rows="6" class="comment-textarea"></textarea>
+                <textarea id="comment" name="comment" rows="6" class="comment-textarea" placeholder="Type your review here..."></textarea>
 
                 <button id="submitBtn" type="submit" class="submit-btn">Submit</button>
             </div>
         </form>
-        <div id="thankYouMessage" class="hidden">
-            <div class="thank-you-content">
-                <h2 class="thank-you-title">THANK YOU FOR YOUR REVIEW!</h2>
-                <p class="thank-you-text">Your feedback is valuable to us.</p>
+
+        <div id="summaryDashboard" class="summary-dashboard hidden">
+            <div class="thank-you-header">
+                <h2 class="thank-you-title">THANK YOU!</h2>
+                <p class="thank-you-text">Here is what others are saying.</p>
             </div>
+
+            <div class="stats-container">
+                <div class="average-score">
+                    <span id="avgScoreDisplay">0.0</span>
+                    <div class="mini-stars" id="avgStarsDisplay"></div>
+                    <p class="total-reviews">Based on <span id="totalCountDisplay">0</span> reviews</p>
+                </div>
+            </div>
+
+            <div id="reviewsList" class="reviews-list">
+                </div>
+            
+            <button id="backBtn" class="btn login" style="margin-top: 20px;">Back to Home</button>
         </div>
+
     </div>
 
     <footer>
