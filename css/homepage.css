@@ -11,7 +11,7 @@ a:active {
   text-decoration: none; 
 }
 
-/* Header */
+/* Header  */
 header h1 {
     color: #134686;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -34,8 +34,7 @@ header .logo img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 40px;
-    /* Padding สำหรับ Desktop/Tablet */
+    padding: 20px 60px;
     background-color: #fff;
     width: 100%;
     box-sizing: border-box;
@@ -56,28 +55,17 @@ header .logo img {
     text-decoration: none;
     color: #000;
     font-size: 0.95rem;
-    /* <-- ปรับลดขนาดลงอีก */
     font-weight: 700;
-    /* ปรับให้หนาขึ้น */
     margin-right: 1rem;
-    /* ปรับลดระยะห่างด้านขวาของลิงก์ */
 }
 
-/*header {
-    padding: 10px;
-    text-align: right;
-    font-size: 16px;  
-      
+.logo img:hover {
+    transform: scale(1.1);
 }
 
-.festicon {
-    width: 75px;
-    height: 75px;
-    float: left;
-    margin-top: 0px;
-    margin-right: 0px;
-}*/
-
+.navbar nav a:hover {
+    color: #c84747;
+}
 
 /* ปุ่ม */
 .btn {
@@ -89,6 +77,11 @@ header .logo img {
     font-size: 0.95rem;
 }
 
+.right-menu .btn + .btn {
+    margin-left: 9px; 
+}
+
+
 .login {
     background: #4e8ef7;
     color: white;
@@ -97,18 +90,20 @@ header .logo img {
 }
 
 .login:hover {
-    background: #3a75e3;
+    color: #3a6fcc;
+    transform: scale(1.1);
 }
 
 .signup {
     background: #f25b5b;
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
     transition: background-color 0.3s;
 }
 
 .signup:hover {
-    background: #e34c4c;
+    color: #c84747;
+    transform: scale(1.1);
 }
 
 /* Main Content */
@@ -171,7 +166,14 @@ figure {
 .picshow {
     width: 250px;
     height: 375px;
-    margin: 0px;
+    margin: 0px; 
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
 
@@ -264,14 +266,14 @@ figure {
     background-color: #000000; 
     color: white;
     border: none;
-    padding: 5px 12px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 20px 1px;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 .btn-learnmore:hover {
@@ -286,8 +288,11 @@ figure {
     transition: background-color 0.3s;
     border-radius: 5px;
     text-align: center;
-    padding-left: 10px;
+    padding-left: 11px;
     padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 0.5;
 }
 
 .feedbacks:hover {
@@ -328,6 +333,7 @@ footer .social {
 footer p {
     font-weight: 600;
     font-size: 1rem;
+    text-align: left;    
 }
 
 footer .social i {
@@ -366,10 +372,10 @@ footer .social i:hover {
         border-radius: 10px;
     }
 
-    .pichead {
+    /*.pichead {
         font-size: 44px;
         
-    }   
+    }*/   
 
     .picshow {
     width: 111px;
@@ -386,10 +392,14 @@ footer .social i:hover {
         width: 600px;
         height: 225px;
     }
+
+    .navbar .logo img {
+        width: 75px;
+    }
 }
 
 /* Responsive Design */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .originpic {
         width: 100vw;
         height: max-content;
@@ -422,7 +432,7 @@ footer .social i:hover {
 
     .btn-learnmore {
         border: none;
-        padding: 10px 40vw;
+        padding: 10px 35vw;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -432,115 +442,13 @@ footer .social i:hover {
         border-radius: 10px;
     }
 
-    .category {
-        width: 400px;
-        height: 220px;
+
+    .navbar nav a {
+        font-size: 0.95rem;
     }
 
-    .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 40px;
-    /* Padding สำหรับ Desktop/Tablet */
-    background-color: #fff;
-    width: 100%;
-    box-sizing: border-box;
-}
 
-.navbar .logo img {
-    width: 50px;
-    transition: all 0.3s ease;
-    margin-right: 10px;
-}
-
-.navbar .right-menu {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.navbar nav a {
-    text-decoration: none;
-    color: #000;
-    font-size: 0.7rem;
-    /* <-- ปรับลดขนาดลงอีก */
-    font-weight: 500;
-    /* ปรับให้หนาขึ้น */
-    margin-right: 0.4rem;
-    /* ปรับลดระยะห่างด้านขวาของลิงก์ */
-    display: inline-block;
-}
-
-.btn {
-    border: none;
-    padding: 1.5px 5px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 0.7rem;
-}
-
-.login {
-    background: #4e8ef7;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    
-}
-
-.login:hover {
-    background: #3a75e3;
-}
-
-.signup {
-    background: #f25b5b;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.signup:hover {
-    background: #e34c4c;
-}
-
-
-footer {
-    padding: 40px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #ddd;
-    margin-top: 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-footer .social {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-left: 10px;
-}
-
-footer p {
-    font-weight: 400;
-    font-size: 1rem;
-    display: inline-block;
-}
-
-footer .social i {
-    font-size: 2rem;
-    color: #134686;
-    cursor: pointer;
-    transition: color 0.3s,transform 0.2s;
-}
-
-footer .social i:hover {
-    color: #ED3F27;
-}
-
-.feedbacks {
+#feedd {
     
     background: #4e8ef7;
     color: white;
@@ -548,17 +456,154 @@ footer .social i:hover {
     transition: background-color 0.3s;
     border-radius: 5px;
     text-align: center;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: 100;
+    padding-left: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 0.9rem;
+    font-weight: 0.5;
+
 }
-.feedbackicon {
-    width: 23px;
-    height: auto;
-    margin-right: 5px;
-    position: relative;
-    top: 7px;
+
+
+.category {
+    width: 300px;
+    height: 150px;
+    background-color: #f4f3f3;
+    padding: 20px;
+    box-shadow: 5px 5px 4px #c2bfbf;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: black;
+    margin-bottom: 15px;
+    
 }
+
+.categoryhead {
+    color: black;
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    
+}
+
+.category div {
+    margin-bottom: 15px;
+    
+}
+
+.category-item  {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+
+    
+}
+
+#item1 {
+    font-size: 0.8rem;
+    
+}
+
+#item2 {
+    font-size: 0.8rem;
+    margin-right: 15px;
+    margin-left: 15px;
+    
+}
+
+#item3 {
+    font-size: 0.8rem;
+    margin-top: 9px;
+}
+
+.itemimg {
+    width: 65px;
+}
+
+.itemheadimg {
+    width: 40px;
+}
+
+
+footer {
+        padding: 40px 20px;
+        
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar nav a {
+        font-size: 0.8rem;
+        margin-right: 0.8rem;
+    }
+
+    .btn {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+        border-radius: 9999px;
+    }
+
+    .main-content-wrapper {
+        padding: 20px 20px;
+    }
+
+    .navbar .logo img {
+        width: 60px;
+    }
+
+    .navbar .right-menu {
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+
+    footer .social i {
+    font-size: 1.9rem;
+    }
+
+    footer p {
+    font-size: 0.9rem;
+    padding-right: 10px;
+}   
+}
+
+@media screen and (max-width: 386px) {
+
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar nav a {
+        font-size: 0.6rem;
+        margin-right: 0.2rem;
+    }
+
+    .btn {
+        padding: 3px 8px;
+        font-size: 0.6rem;
+        border-radius: 9999px;
+    }
+
+    .main-content-wrapper {
+        padding: 20px 20px;
+    }
+
+    .navbar .logo img {
+        width: 50px;
+    }
+
+    .navbar .right-menu {
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+
+    footer p {
+    font-size: 0.9rem;
+}   
 }
