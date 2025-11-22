@@ -3,6 +3,8 @@ header('Content-Type: application/json');
 
 $jsonFile = '../data/feedback_data.json';
 
+date_default_timezone_set('Asia/Bangkok');
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $inputData = json_decode(file_get_contents('php://input'), true);
 
@@ -14,6 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $dataArray = [];
         }
   
+        $inputData['timestamp'] = date('Y-m-d H:i:s'); 
+
         $dataArray[] = $inputData;
         
         if(file_put_contents($jsonFile, json_encode($dataArray, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE))) {
