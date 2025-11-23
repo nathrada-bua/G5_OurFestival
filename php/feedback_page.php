@@ -11,26 +11,10 @@
 </head>
 
 <body>
-
-    <header class="navbar">
-        <div class="logo">
-            <a href="../html/homepage.html">
-                <img src="../resources/logo.png" alt="Logo" class="w-12 md:w-14">
-            </a>
-        </div>
-
-        <div class="right-menu">
-            <nav class="flex items-center gap-4">
-                <a href="../html/homepage.html">Home</a>
-                <a href="../html/Booth_directory.html">About Us</a>
-            </nav>
-            <div class="flex gap-2">
-                <a href="../php/login.php" class="btn login flex items-center justify-center">log in</a>
-                <a href="../php/signup.php" class="btn signup flex items-center justify-center">sign up</a>
-            </div>
-
-        </div>
-    </header> <br>
+    <?php 
+        include("./header.php");
+    ?>
+    <br>
 
     <div class="main-content-wrapper">
 

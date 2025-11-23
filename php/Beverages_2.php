@@ -15,25 +15,10 @@
     <link rel="stylesheet" href="../css/Beverages.css" />
   </head>
   <body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="../html/homepage.html">
-                <img src="../resources/logo.png" alt="Logo" class="w-12 md:w-14">
-            </a>
-        </div>
-
-        <div class="right-menu">
-            <nav class="flex items-center gap-4">
-                <a href="../html/homepage.html">Home</a>
-                <a href="../html/Booth_directory.html">About Us</a>
-            </nav>
-            <div class="flex gap-2">
-                <a href="../php/login.php" class="btn login flex items-center justify-center">log in</a>
-                <a href="../php/signup.php" class="btn signup flex items-center justify-center">sign up</a>
-            </div>
-
-        </div>
-    </header><br>
+    <?php 
+        include("./header.php");
+    ?>
+    <br>
 
     <main>
       <h1>Baan Brew</h1>
@@ -71,7 +56,7 @@
         <div class="pager-center">
             <span class="pager-page">2/2</span>
         </div>
-        <button class="pager-next"><a href="Beverages_1.html">BACK</a></button>
+        <button class="pager-next"><a href="./Beverages_1.php">BACK</a></button>
     </div>
     <div class="pager-line"></div>
 
@@ -98,7 +83,7 @@
             </ul>
         </div>
         <div class="feedback">
-            <a href="../html/feedback.html"><button class="btn-feedback"><img src="../resources/feedback.png"
+            <a href="./feedback_page.php"><button class="btn-feedback"><img src="../resources/feedback.png"
                         class="feedbackicon">feedback</button></a>
         </div>
     </div>

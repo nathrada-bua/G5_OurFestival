@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       $_SESSION['username'] = $username;
       session_write_close();
 
-      header('Location: ../php/homepage.php');
+      header('Location: ./homepage.php');
       exit();
     }
     else 

@@ -21,9 +21,9 @@
 <a href="../registration/signup.html"><button class="btn-signup">Sign up</button></a>
 </header>-->
 
-<?php 
- include("./header.php");
-?>
+    <?php 
+        include("./header.php");
+    ?>
     <br>
     <section>
 
@@ -37,7 +37,7 @@
                 of savory food, desserts, and beverages in one place, allowing fairgoers to easily find the stalls they
                 want and experience the fair atmosphere even in digital form.
             </article>
-            <a href="../html/Booth_directory.html"><button class="btn-learnmore">Learn more</button></a>
+            <a href="./Booth_directory.php"><button class="btn-learnmore">Learn more</button></a>
 
             </div>
 
@@ -88,18 +88,18 @@
 
     </section>
 
-    <nav class="category"><a href="../html/Booth_directory.html">
+    <nav class="category"><a href="./Booth_directory.php">
             <div class="categoryhead"><img src="../resources/logo-category-43.svg" class="itemheadimg">
                 <div class="categorytext">&nbsp;หมวดหมู่สินค้า</div>
             </div>
         </a>
 
         <div class="category-item">
-            <div class="item" id="item1"><a href="../html/Booth_directory.html#foodhead" class="item"><img
+            <div class="item" id="item1"><a href="./Booth_directory.php#foodhead" class="item"><img
                         src="../resources/food-66.svg" class="itemimg"><br>Foods</a></div><br>
-            <div class="item" id="item2"><a href="../html/Booth_directory.html#dessertshead" class="item"><img
+            <div class="item" id="item2"><a href="./Booth_directory.php#dessertshead" class="item"><img
                         src="../resources/cake-60.svg" class="itemimg"><br>Desserts</a></div><br>
-            <div class="item" id="item3"><a href="../html/Booth_directory.html#beverageshead" class="item"><img
+            <div class="item" id="item3"><a href="./Booth_directory.php#beverageshead" class="item"><img
                         src="../resources/beverage-63.svg" class="itemimg"><br>Beverages</a></div><br>
 
             <!--
@@ -110,7 +110,7 @@
     </nav>
     <div class="feedback">
         <div class="flex gap-2">
-            <a href="../html/feedback.html" class="btn feedbacks flex items-center justify-center" id="feedd"><img
+            <a href="./feedback_page.php" class="btn feedbacks flex items-center justify-center" id="feedd"><img
                     src="../resources/feedback.png" class="feedbackicon"> feedback</a>
         </div><br>
 

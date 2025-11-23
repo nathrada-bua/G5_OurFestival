@@ -2,5 +2,5 @@
     session_start();
     $_SESSION = array();
     session_write_close();
-    header('Location: ../html/homepage.html');
+    header('Location: ./homepage.php');
 ?>

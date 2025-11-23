@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(backBtn) {
         backBtn.addEventListener('click', () => {
-            window.location.href = "../html/homepage.html";
+            window.location.href = "./homepage.php";
         });
     }
 });

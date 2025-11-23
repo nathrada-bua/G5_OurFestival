@@ -11,24 +11,10 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="../html/homepage.html">
-                <img src="../resources/logo.png" alt="Logo" class="w-12 md:w-14">
-            </a>
-        </div>
-
-        <div class="right-menu">
-            <nav class="flex items-center gap-4">
-                <a href="../html/homepage.html">Home</a>
-                <a href="../html/Booth_directory.html">About Us</a>
-            </nav>
-            <div class="flex gap-2">
-                <a href="../php/login.php" class="btn login flex items-center justify-center">log in</a>
-                <a href="../php/signup.php" class="btn signup flex items-center justify-center">sign up</a>
-            </div>
-        </div>
-    </header><br>
+    <?php 
+        include("./header.php");
+    ?>
+    <br>
 
     <section class="menu-section">
         <h2 id="foodhead">Foods</h2>
@@ -38,7 +24,7 @@
                 <p>Experience the warm taste of Italy with rich sauces,<br>
                     melted cheese, and freshly baked goodness.<br>
                     Every bite is full of comfort and authentic Italian flavor!</p>
-                <a href="../html/food_Menu-1.html"><button>Menu</button></a>
+                <a href="./food_Menu-1.php"><button>Menu</button></a>
             </div>
             <img src="../resources/Food_Menu-1 Owner.jpg" alt="Food_Menu-1 Owner">
         </div>
@@ -49,7 +35,7 @@
                 <p>Experience the bold and vibrant flavors of Thailand!<br>
                     From spicy stir-fried basil pork to refreshing glass noodle salad,<br>
                     every dish is made fresh and full of authentic Thai taste.</p>
-                <a href="../html/food_Menu-2.html"><button>Menu</button></a>
+                <a href="./food_Menu-2.php"><button>Menu</button></a>
             </div>
             <img src="../resources/Food_Menu-2 Owner.jpg" alt="Food_Menu-2 Owner">
         </div>
@@ -67,7 +53,7 @@
                     We uniquely pair these comforting sweets with the fragrant, crisp Melon Pan and the addictive,
                     savory simplicity of Shio Pan.<br>
                     A distinctive menu where every craving finds its exquisite match.</p>
-                <a href="../html/Dessert_1.html"><button>Menu</button></a>
+                <a href="./Dessert_1.php"><button>Menu</button></a>
             </div>
         </div>
 
@@ -78,7 +64,7 @@
                 <p>Experience the true heritage of Thai sweets, crafted with recipes perfected across generations.<br>
                     Our desserts deliver a rich, comforting sweetness through incredibly soft and tender textures,
                     offering a refined, beautiful treat.</p>
-                <a href="../html/Dessert_2.html"><button>Menu</button></a>
+                <a href="./Dessert_2.php"><button>Menu</button></a>
             </div>
         </div>
     </section>
@@ -98,7 +84,7 @@
                     local ingredients and timeless recipes, Yen Yen Bamboo blends tradition
                     with modern flair, inviting everyone to pause, sip, and enjoy the gentle
                     breeze of Thai refreshment.</p>
-                <a href="../html/Beverages_1.html"><button>Menu</button></a>
+                <a href="./Beverages_1.php"><button>Menu</button></a>
             </div>
             <img src="../resources/Beverages_1 Owner.jpg" alt="Beverages-1 Owner">
         </div>
@@ -115,7 +101,7 @@
                     ingredients and familiar flavors that evoke childhood memories and local
                     charm. Whether at a festival or street fair, Baan Brew invites everyone
                     to sip, smile, and feel at home—one cup at a time.</p>
-                <a href="../html/Beverages_2.html"><button>Menu</button></a>
+                <a href="./Beverages_2.php"><button>Menu</button></a>
             </div>
             <img src="../resources/Beverages_2 Owner.jpg" alt="Beverages-2 Owner">
         </div>
@@ -123,7 +109,7 @@
 
     <footer class="footer">
     <div class="footer-left">
-        <a href="../html/feedback.html" class="feedback-btn">
+        <a href="./feedback_page.php" class="feedback-btn">
             <img src="../resources/feedback.png" class="feedbackicon">
             Feedback
         </a>

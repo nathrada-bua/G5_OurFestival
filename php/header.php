@@ -5,7 +5,7 @@
 
 <header class="navbar">
         <div class="logo">
-            <a href="../html/homepage.html">
+            <a href="./homepage.php">
                 <img src="../resources/logo.png" alt="Logo" class="w-12 md:w-14">
             </a>
             
@@ -20,18 +20,18 @@
            
         <div class="right-menu">
             <nav class="flex items-center gap-4">
-                <a href="../php/homepage.php">Home</a>
-                <a href="../html/Booth_directory.html">About Us</a>
+                <a href="./homepage.php">Home</a>
+                <a href="./Booth_directory.php">About Us</a>
             </nav>
             
             <?php if(!$login) { ?>
                 <div class="flex gap-2">
-                    <a href="../php/login.php" class="btn login flex items-center justify-center">log in</a>
-                    <a href="../php/signup.php" class="btn signup flex items-center justify-center">sign up</a>
+                    <a href="./login.php" class="btn login flex items-center justify-center">log in</a>
+                    <a href="./signup.php" class="btn signup flex items-center justify-center">sign up</a>
                 </div>
             <?php } else { ?>
                 <div class="flex gap-2">
-                    <a href="../php/logout.php" class="btn login flex items-center justify-center">log out</a>
+                    <a href="./logout.php" class="btn login flex items-center justify-center">log out</a>
                 </div>
             <?php } ?>
         </div>
