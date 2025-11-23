@@ -60,6 +60,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   {
     $error['email'] = 'Email is required';
   }
+  else {
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $error['email'] = "Invalid email format";
+    }
+  }
 
   if ($password == '')
   {
@@ -141,7 +146,7 @@ if ($result == 'signup')
           ?>
 
           <p class="subtitle">Password</p>
-          <input type="text" class="input-text" id="password" name="password" value="<?php echo $password; ?>"/>
+          <input type="password" class="input-text" id="password" name="password" value="<?php echo $password; ?>"/>
           <?php 
             if(array_key_exists('password', $error)) { 
           ?>
@@ -159,7 +164,7 @@ if ($result == 'signup')
 
           <p class="subtitle">Confirm Password</p>
           <input
-            type="text"
+            type="password"
             class="input-text"
             id="confirm-password"
             name="confirm-password"
@@ -191,6 +196,11 @@ if ($result == 'signup')
 <?php
 } else {
 ?>
+  <div class="table-container">
+    <div>
+      <h3 class="list-header">All user list</h3>
+    </div>
+    
   <table class="table-list">
     <thead>
       <tr>
@@ -220,6 +230,7 @@ if ($result == 'signup')
       ?>
     </tbody>
   </table>
+  </div>
 
 <?php
 }

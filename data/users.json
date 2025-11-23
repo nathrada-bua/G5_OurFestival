@@ -1,32 +1,12 @@
 [
     {
-        "username": "hello",
-        "email": "hello@gmail.com",
-        "password": "1234"
+        "username": "rrrrrrrrr",
+        "email": "r",
+        "password": "rr"
     },
     {
-        "username": "hi",
-        "email": "hi@gmail.com",
-        "password": "4321"
-    },
-    {
-        "username": "ertyuio",
-        "email": "rtyu@wert.c",
-        "password": "wertyu"
-    },
-    {
-        "username": "ghj",
-        "email": "bn@gmail.com",
-        "password": "bnm,"
-    },
-    {
-        "username": "haha",
-        "email": ";lkjhgf@dfghj.hjk",
-        "password": "asd"
-    },
-    {
-        "username": "hahad",
-        "email": "hah2skjf.vjkl",
-        "password": "asd"
+        "username": "ddd",
+        "email": "dsad@b.c",
+        "password": "dd"
     }
 ]
