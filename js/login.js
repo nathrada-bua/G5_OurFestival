@@ -7,6 +7,7 @@ const passwordErrorText = document.getElementById('password-error');
 const icon = document.getElementById("icon");
 const icons = ["../resources/Project_Mascot_Default.png", "../resources/Project_Mascot_4.png", "../resources/Project_Mascot_5.png"];
 
+/*
 function getCookie(name) {
   const cookies = document.cookie.split("; ");
   for (const cookie of cookies) {
@@ -50,6 +51,7 @@ loginButton.addEventListener('click', (event) => {
         document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/registration";
     }
 });
+*/
 
 // Mascot animation
 let i = 0;

@@ -27,7 +27,47 @@
             </div>
         </div>
     </header> 
+<?php
+$users_file = '../data/users.json';
+$result_html = '';
 
+if (file_exists($users_file)) {
+  $records = json_decode(file_get_contents($users_file), true) ?? [];
+} else {
+  $records = [];
+}
+
+$result = 'login';
+$error = [];
+$username = '';
+$password = '';
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $username = trim($_POST['username'] ?? '');
+  $password = trim($_POST['password'] ?? '');
+
+  if ($username == '')
+  {
+    $error['username'] = 'Username is required';
+  }
+
+  if ($password == '')
+  {
+    $error['password'] = 'Password is required';
+  }
+
+  if (count($error) == 0) {
+    if ($username == $records['username'] && $password == $records['password'])
+    {
+      $result = 'homepage';
+    }
+  }
+} 
+
+if($result == 'login') 
+{
+?>
     <form class="container">
       <img id="icon" src="../resources/Project_Mascot_Default.png" alt="mascot" width="100px">
       <div class="registration-container-bg">
@@ -57,5 +97,8 @@
         </div>
       </div>
     </form>
-  </body>
+<?php } else { ?>
+    <h1>Hello World</h1>
+<?php } ?>
+</body>
 </html>
