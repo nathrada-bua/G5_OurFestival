@@ -60,30 +60,23 @@
         <hr>
 
 
-        <aside class="member">
-            <div class="member">
-                <div class="memberhead"> member</div>
+        <aside class="member-container">
+    <div class="member-list">
+        <div class="memberhead">Member</div>
 
-                <ol type="1">
-                    <li>Thiarakun Chanrungrueang 6809540153 (UX/UI)</li>
-                    <li> Nathrada Buasuwan 6809617118 (JavaScript Development (Registration Page, Log in Page))</li>
-                    <li> Thammawat Surinwong 6809617175 (Booth Directory Page)</li>
-                </ol>
-
-                <ol type="1" start="4">
-                    <li>Pithayakorn Sirisunthornkamon 6809617258 (Booth Page)</li>
-                    <li>Phetrada Promma 6809617266 (Booth Page)</li>
-                    <li>Manawat Boonkrong 6809617316 (Html Development (Homepage))</li>
-                </ol>
-
-                <ol type="1" start="6">
-                    <li>Apichaya Thangbhandit 6809617498 (Booth Page)</li>
-                    <li>Thanapoom Tanatninat 6809681437 (UX/UI)</li>
-                    <li>Naphatsanan Watthanajirapan 6809681445 (JavaScript Development (Leave Your Feedback Page))</li>
-                </ol>
-            </div>
-
-        </aside>
+        <ol class="team-members">
+            <li>Thiarakun Chanrungrueang 6809540153 (UX/UI)</li>
+            <li>Nathrada Buasuwan 6809617118 (JavaScript Development (Registration Page))</li>
+            <li>Thammawat Surinwong 6809617175 (Booth Directory Page)</li>
+            <li>Pithayakorn Sirisunthornkamon 6809617258 (Booth Page)</li>
+            <li>Phetrada Promma 6809617266 (Booth Page)</li>
+            <li>Manawat Boonkrong 6809617316 (Html Development (Homepage))</li>
+            <li>Apichaya Thangbhandit 6809617498 (Booth Page)</li>
+            <li>Thanapoom Tanatninat 6809681437 (UX/UI)</li>
+            <li>Naphatsanan Watthanajirapan 6809681445 (JavaScript Development (Leave Your Feedback Page))</li>
+        </ol>
+    </div>
+</aside>
 
 
     </section>
