@@ -123,35 +123,5 @@
         "rating": "4",
         "comment": "Good!",
         "timestamp": "2025-11-23 13:34:22"
-    },
-    {
-        "rating": "3",
-        "comment": "123",
-        "timestamp": "2025-11-23 19:20:37"
-    },
-    {
-        "rating": "2",
-        "comment": "",
-        "timestamp": "2025-11-23 19:21:56"
-    },
-    {
-        "rating": "4",
-        "comment": "",
-        "timestamp": "2025-11-23 19:23:39"
-    },
-    {
-        "rating": "3",
-        "comment": "",
-        "timestamp": "2025-11-23 19:24:48"
-    },
-    {
-        "rating": "5",
-        "comment": "",
-        "timestamp": "2025-11-23 19:25:58"
-    },
-    {
-        "rating": "4",
-        "comment": "",
-        "timestamp": "2025-11-23 20:14:18"
     }
 ]
