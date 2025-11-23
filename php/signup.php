@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       }
     }
     if (count($error) == 0) {
-      $records[] = ['username' => $username, 'email' => $email, 'password' => $password];
+      $records[] = ['username' => $username, 'email' => $email, 'password' => md5($password)];
 
       file_put_contents($users_file, json_encode($records, JSON_PRETTY_PRINT));
       $result = 'userslist';

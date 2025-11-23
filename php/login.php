@@ -45,9 +45,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   if (count($error) == 0) {
     $found = false;
+    $md5_password = md5($password);
+
     foreach($records as $record) {
 
-      if($username == $record['username'] && $password == $record['password']){
+      if($username == $record['username'] && $md5_password == $record['password']){
         $found = true;
         break;
       }

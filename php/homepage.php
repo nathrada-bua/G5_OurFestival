@@ -66,7 +66,7 @@
 
                 <ol type="1">
                     <li>Thiarakun Chanrungrueang 6809540153 (UX/UI)</li>
-                    <li> Nathrada Buasuwan 6809617118 (JavaScript Development (Registration Page))</li>
+                    <li> Nathrada Buasuwan 6809617118 (JavaScript Development (Registration Page, Log in Page))</li>
                     <li> Thammawat Surinwong 6809617175 (Booth Directory Page)</li>
                 </ol>
 

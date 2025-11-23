@@ -12,7 +12,13 @@ const icons = ["../resources/Project_Mascot_Default.png", "../resources/Project_
 
 // Mascot animation
 let i = 0;
-setInterval(() => {
-    i = (i+1) % icons.length;
-    icon.src = icons[i];
+let id = 0;
+
+id = setInterval(() => {
+    if(icon) {
+        icon.src = icons[i];
+        i = (i+1) % icons.length;
+    } else {
+        clearInterval(id);
+    }
 }, 2000);

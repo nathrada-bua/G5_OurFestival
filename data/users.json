@@ -2,11 +2,41 @@
     {
         "username": "pp",
         "email": "pp@pp.p",
-        "password": "123"
+        "password": "dd62f9ccc2708210ebda872fcd1cd2ae"
     },
     {
         "username": "test1",
         "email": "test1@gmail.com",
-        "password": "test1"
+        "password": "dd62f9ccc2708210ebda872fcd1cd2ae"
+    },
+    {
+        "username": "nathrada",
+        "email": "nathrada@gmail.com",
+        "password": "dd62f9ccc2708210ebda872fcd1cd2ae"
+    },
+    {
+        "username": "mid",
+        "email": "mild@gmail.com",
+        "password": "dd62f9ccc2708210ebda872fcd1cd2ae"
+    },
+    {
+        "username": "mi",
+        "email": "mi@gmail.com",
+        "password": "dd62f9ccc2708210ebda872fcd1cd2ae"
+    },
+    {
+        "username": "hi",
+        "email": "hi@gmail.com",
+        "password": "dd62f9ccc2708210ebda872fcd1cd2ae"
+    },
+    {
+        "username": "rrrrrrrrr",
+        "email": "rrrr@gmail.com",
+        "password": "f30aa7a662c728b7407c54ae6bfd27d1"
+    },
+    {
+        "username": "iii",
+        "email": "iii@gmail.com",
+        "password": "f30aa7a662c728b7407c54ae6bfd27d1"
     }
 ]

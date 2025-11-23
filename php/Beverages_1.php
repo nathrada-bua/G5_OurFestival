@@ -13,6 +13,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="../css/Beverages.css" />
+    <link rel="stylesheet" href="../css/userinfo.css" />
   </head>
   <body>
     <?php 

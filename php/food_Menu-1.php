@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buono Bites</title>
     <link rel="stylesheet" href="../css/food_Menu.css">
+    <link rel="stylesheet" href="../css/userinfo.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
