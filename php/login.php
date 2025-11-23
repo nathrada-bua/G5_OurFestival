@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log in Page</title>
     <link rel="stylesheet" href="../css/registration.css" />
+    <link rel="stylesheet" href="../css/userinfo.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="../js/login.js" defer></script>
   </head>
@@ -56,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       $_SESSION['username'] = $username;
       session_write_close();
 
-      header('Location: ../html/homepage.html');
+      header('Location: ../php/homepage.php');
       exit();
     }
     else 
