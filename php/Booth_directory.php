@@ -108,23 +108,23 @@
         </div>
     </section>
 
-    <footer class="footer">
-    <div class="footer-left">
-        <a href="./feedback_page.php" class="feedback-btn">
-            <img src="../resources/feedback.png" class="feedbackicon">
-            Feedback
-        </a>
-    </div>
+    <footer>
+        <div class="footer-top">
+            <a href="../html/feedback.html" class="btn feedbacks">
+                <img src="../resources/feedback.png" class="feedbackicon"> feedback
+            </a>
+        </div>
 
-    <p class="footer-center">© 2025 Eatfinity Fair</p>
-
-    <div class="footer-right social">
-        <i class="fas fa-envelope"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-tiktok"></i>
-    </div>
-</footer>
+        <div class="footer-bottom">
+            <p>© 2025 Eatfinity Fair</p>
+            <div class="social">
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-tiktok"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
