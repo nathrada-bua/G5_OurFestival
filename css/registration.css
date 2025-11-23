@@ -122,6 +122,10 @@ html, body {
   color: red;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .hide {
   display: none;
 }

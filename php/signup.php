@@ -9,26 +9,10 @@
     <script src="../js/signup.js" defer></script>
   </head>
   <body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="../html/homepage.html">
-                <img src="../resources/logo.png" alt="Logo" class="w-12 md:w-14">
-            </a>
-        </div>
-
-        <div class="right-menu">
-            <nav class="flex items-center gap-4">
-                <a href="../html/homepage.html">Home</a>
-                <a href="../html/Booth_directory.html">About Us</a>
-            </nav>
-            <div class="flex gap-2">
-                <a href="./login.php" class="btn login flex items-center justify-center">log in</a>
-                <a href="./signup.php" class="btn signup flex items-center justify-center">sign up</a>
-            </div>
-        </div>
-    </header>
 
 <?php
+include ("./header.php");
+
 $users_file = '../data/users.json';
 $result_html = '';
 
@@ -193,9 +177,7 @@ if ($result == 'signup')
       </div>
     </form>
   
-<?php
-} else {
-?>
+<?php } else { ?>
   <div class="table-container">
     <div>
       <h3 class="list-header">All user list</h3>
@@ -231,11 +213,7 @@ if ($result == 'signup')
     </tbody>
   </table>
   </div>
-
-<?php
-}
-?>
-
+<?php } ?>
 </body>
 </html>
 

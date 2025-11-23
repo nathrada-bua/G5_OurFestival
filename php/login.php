@@ -9,25 +9,10 @@
     <script src="../js/login.js" defer></script>
   </head>
   <body>
-    <header class="navbar">
-        <div class="logo">
-            <a href="../html/homepage.html">
-                <img src="../resources/logo.png" alt="Logo" class="w-12 md:w-14">
-            </a>
-        </div>
-
-        <div class="right-menu">
-            <nav class="flex items-center gap-4">
-                <a href="../html/homepage.html">Home</a>
-                <a href="../html/Booth_directory.html">About Us</a>
-            </nav>
-            <div class="flex gap-2">
-                <a href="../html/login.html" class="btn login flex items-center justify-center">log in</a>
-                <a href="../php/signup.php" class="btn signup flex items-center justify-center">sign up</a>
-            </div>
-        </div>
-    </header> 
+    
 <?php
+include ("./header.php");
+
 $users_file = '../data/users.json';
 $result_html = '';
 
@@ -58,9 +43,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 
   if (count($error) == 0) {
-    if ($username == $records['username'] && $password == $records['password'])
+    $found = false;
+    foreach($records as $record) {
+
+      if($username == $record['username'] && $password == $record['password']){
+        $found = true;
+        break;
+      }
+    }
+
+    if($found) {
+      $_SESSION['username'] = $username;
+      session_write_close();
+
+      header('Location: ../html/homepage.html');
+      exit();
+    }
+    else 
     {
-      $result = 'homepage';
+       $error['login'] = 'Invalid username or password';
     }
   }
 } 
@@ -68,33 +69,71 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 if($result == 'login') 
 {
 ?>
-    <form class="container">
+    <form class="container" method="POST" action="login.php">
       <img id="icon" src="../resources/Project_Mascot_Default.png" alt="mascot" width="100px">
       <div class="registration-container-bg">
         <p id="title">Log in</p>
         <div class="section1">
           <p class="subtitle">Username</p>
-          <input type="text" class="input-text" id="username" name="username" />
-          <p class="text-error hide" id="username-error">
-            Username is required
+          <input type="text" class="input-text" id="username" name="username" value="<?php echo $username; ?>"/>
+          <?php 
+            if(array_key_exists('username', $error)) { 
+          ?>
+          <p class="text-error">
+
+          <?php 
+            echo $error['username'];
+          ?>
+
           </p>
 
+          <?php
+          }
+          ?>
+
           <p class="subtitle">Password</p>
-          <input type="text" class="input-text" id="password" name="password" />
-          <p class="text-error hide" id="password-error">
-            Password is required
+          <input type="password" class="input-text" id="password" name="password" value="<?php echo $password; ?>" />
+          <?php 
+            if(array_key_exists('password', $error)) { 
+          ?>
+          <p class="text-error">
+
+          <?php 
+            echo $error['password'];
+          ?>
+
           </p>
+
+          <?php
+          }
+          ?>
+
           <br />
           <div class="remember-container">
             <input type="checkbox" id="checkbox" />
             <p id="remember-info">Remember me</p>
           </div>
-        </div>
 
+          <?php 
+            if(array_key_exists('login', $error)) { 
+          ?>
+          <p class="text-error text-center">
+
+          <?php 
+            echo $error['login'];
+          ?>
+
+          </p>
+
+          <?php
+          }
+          ?>
+        </div>
         <div class="section2">
           <button type="submit" id="loginBtn">Log in</button>
           <p id="forgot-info">Forgot Username/Password ?</p>
         </div>
+
       </div>
     </form>
 <?php } else { ?>
