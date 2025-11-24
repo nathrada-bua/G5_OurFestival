@@ -297,7 +297,7 @@ figure {
 }
 */
 .btn-learnmore {
-    background-color: #000000; 
+    background-color: #e40d0d; 
     color: white;
     border: none;
     padding: 10px 15px;
@@ -430,6 +430,9 @@ footer .social i:hover {
     .navbar .logo img {
         width: 75px;
     }
+
+    
+     
 }
 
 /* Responsive Design */
@@ -492,9 +495,7 @@ footer .social i:hover {
     }
 
 
-    .navbar nav a {
-        font-size: 0.95rem;
-    }
+    .navbar nav a { font-size: 0.95rem; }
 
 
 #feedd {
@@ -584,33 +585,12 @@ footer {
 
 @media screen and (max-width: 767px) {
 
-    .navbar {
-        padding: 10px 20px;
-    }
-
-    .navbar nav a {
-        font-size: 0.8rem;
-        margin-right: 0.8rem;
-    }
-
-    .btn {
-        padding: 5px 12px;
-        font-size: 0.8rem;
-        border-radius: 9999px;
-    }
-
-    .main-content-wrapper {
-        padding: 20px 20px;
-    }
-
-    .navbar .logo img {
-        width: 60px;
-    }
-
-    .navbar .right-menu {
-        flex-wrap: nowrap;
-        gap: 5px;
-    }
+    .navbar { padding: 10px 20px; }
+    .navbar nav a { font-size: 0.8rem; margin-right: 0.8rem; }
+    .btn { padding: 5px 12px; font-size: 0.8rem; border-radius: 9999px; }
+    .main-content-wrapper { padding: 20px 20px; }
+    .navbar .logo img { width: 70px; }
+    .navbar .right-menu { flex-wrap: nowrap; gap: 5px; }
 
     footer .social i {
     font-size: 1.9rem;
@@ -647,7 +627,17 @@ footer {
     }
 }
 
-@media screen and (max-width: 386px) {
+@media screen and (max-width: 500px){
+
+    .navbar { padding: 10px 20px; }
+    .navbar nav a { font-size: 0.7rem; margin-right: 0.8rem; }
+    .btn { padding: 5px 12px; font-size: 0.7rem; border-radius: 9999px; }
+    .main-content-wrapper { padding: 20px 20px; }
+    .navbar .logo img { width: 50px; }
+    .navbar .right-menu { flex-wrap: nowrap; gap: 4px; }
+}
+
+@media screen and (max-width: 398px) {
 
     .navbar {
         padding: 10px 20px;
@@ -674,7 +664,7 @@ footer {
 
     .navbar .right-menu {
         flex-wrap: nowrap;
-        gap: 5px;
+        gap: 3px;
     }
 
     footer p {
