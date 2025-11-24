@@ -23,11 +23,9 @@ if (file_exists($users_file)) {
   $records = [];
 }
 
-$result = 'login';
 $error = [];
 $username = '';
 $password = '';
-
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $username = trim($_POST['username'] ?? '');
@@ -45,9 +43,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   if (count($error) == 0) {
     $found = false;
+    $md5_password = md5($password);
+
     foreach($records as $record) {
 
-      if($username == $record['username'] && $password == $record['password']){
+      if($username == $record['username'] && $md5_password == $record['password']){
         $found = true;
         break;
       }
@@ -65,11 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
        $error['login'] = 'Invalid username or password';
     }
   }
-} 
-
-if($result == 'login') 
-{
-?>
+} ?>
     <form class="container" method="POST" action="login.php">
       <img id="icon" src="../resources/Project_Mascot_Default.png" alt="mascot" width="100px">
       <div class="registration-container-bg">
@@ -77,37 +73,15 @@ if($result == 'login')
         <div class="section1">
           <p class="subtitle">Username</p>
           <input type="text" class="input-text" id="username" name="username" value="<?php echo $username; ?>"/>
-          <?php 
-            if(array_key_exists('username', $error)) { 
-          ?>
-          <p class="text-error">
-
-          <?php 
-            echo $error['username'];
-          ?>
-
-          </p>
-
-          <?php
-          }
-          ?>
+          <?php if(array_key_exists('username', $error)) { ?>
+            <p class="text-error"><?php echo $error['username'];?></p>
+          <?php } ?>
 
           <p class="subtitle">Password</p>
           <input type="password" class="input-text" id="password" name="password" value="<?php echo $password; ?>" />
-          <?php 
-            if(array_key_exists('password', $error)) { 
-          ?>
-          <p class="text-error">
-
-          <?php 
-            echo $error['password'];
-          ?>
-
-          </p>
-
-          <?php
-          }
-          ?>
+          <?php if(array_key_exists('password', $error)) { ?>
+            <p class="text-error"><?php echo $error['password'];?></p>
+          <?php } ?>
 
           <br />
           <div class="remember-container">
@@ -115,30 +89,15 @@ if($result == 'login')
             <p id="remember-info">Remember me</p>
           </div>
 
-          <?php 
-            if(array_key_exists('login', $error)) { 
-          ?>
-          <p class="text-error text-center">
-
-          <?php 
-            echo $error['login'];
-          ?>
-
-          </p>
-
-          <?php
-          }
-          ?>
+          <?php if(array_key_exists('login', $error)) { ?>
+            <p class="text-error text-center"><?php echo $error['login'];?></p>
+          <?php } ?>
         </div>
         <div class="section2">
           <button type="submit" id="loginBtn">Log in</button>
           <p id="forgot-info">Forgot Username/Password ?</p>
         </div>
-
       </div>
     </form>
-<?php } else { ?>
-    <h1>Hello World</h1>
-<?php } ?>
 </body>
 </html>

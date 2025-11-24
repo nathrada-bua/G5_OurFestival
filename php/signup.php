@@ -77,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       }
     }
     if (count($error) == 0) {
-      $records[] = ['username' => $username, 'email' => $email, 'password' => $password];
+      $records[] = ['username' => $username, 'email' => $email, 'password' => md5($password)];
 
       file_put_contents($users_file, json_encode($records, JSON_PRETTY_PRINT));
       $result = 'userslist';
@@ -85,9 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   }
 } 
 
-if ($result == 'signup')
-{
-?>
+if ($result == 'signup') { ?>
     <form class="container" method="POST" action="signup.php">
       <img id="icon" src="../resources/Project_Mascot_Default.png" alt="mascot" width="100px">
       <div class="registration-container-bg">
@@ -97,55 +95,22 @@ if ($result == 'signup')
           <p class="subtitle">Username</p>
           <input type="text" class="input-text" id="username" name="username" value="<?php echo $username; ?>" />
           
-          <?php 
-            if(array_key_exists('username', $error)) { 
-          ?>
-          <p class="text-error">
-
-          <?php 
-            echo $error['username'];
-          ?>
-
-          </p>
-
-          <?php
-          }
-          ?>
+          <?php if(array_key_exists('username', $error)) { ?>
+            <p class="text-error"><?php echo $error['username'];?></p>
+          <?php } ?>
           
 
           <p class="subtitle">Email</p>
           <input type="text" class="input-text" id="email" name="email" value="<?php echo $email; ?>"/>
-          <?php 
-            if(array_key_exists('email', $error)) { 
-          ?>
-          <p class="text-error">
-
-          <?php 
-            echo $error['email'];
-          ?>
-
-          </p>
-
-          <?php
-          }
-          ?>
+          <?php if(array_key_exists('email', $error)) { ?>
+            <p class="text-error"><?php echo $error['email'];?></p>
+          <?php } ?>
 
           <p class="subtitle">Password</p>
           <input type="password" class="input-text" id="password" name="password" value="<?php echo $password; ?>"/>
-          <?php 
-            if(array_key_exists('password', $error)) { 
-          ?>
-          <p class="text-error">
-
-          <?php 
-            echo $error['password'];
-          ?>
-
-          </p>
-
-          <?php
-          }
-          ?>
+          <?php if(array_key_exists('password', $error)) { ?>
+            <p class="text-error"><?php echo $error['password'];?></p>
+          <?php } ?>
 
           <p class="subtitle">Confirm Password</p>
           <input
@@ -155,20 +120,9 @@ if ($result == 'signup')
             name="confirm-password"
             value="<?php echo $confirm; ?>"
           />
-          <?php 
-            if(array_key_exists('confirm', $error)) { 
-          ?>
-          <p class="text-error">
-
-          <?php 
-            echo $error['confirm'];
-          ?>
-
-          </p>
-
-          <?php
-          }
-          ?>
+          <?php if(array_key_exists('confirm', $error)) { ?>
+            <p class="text-error"><?php echo $error['confirm'];?></p>
+          <?php }?>
         </div>
 
         <div class="section2">
@@ -192,29 +146,21 @@ if ($result == 'signup')
       </tr>
     </thead>
     <tbody>
-      <?php
-        foreach ($records as $record) {
-
-      ?>
+      <?php foreach ($records as $record) {?>
       <tr>
         <td>
-          <?php
-          echo $record['username'];
-          ?>
+          <?php echo $record['username']; ?>
         </td>
         <td>
-          <?php
-          echo $record['email'];
-          ?>
+          <?php echo $record['email']; ?>
         </td>
       </tr>
-      <?php
-      }
-      ?>
+      <?php } ?>
     </tbody>
   </table>
   </div>
 <?php } ?>
+
 </body>
 </html>
 

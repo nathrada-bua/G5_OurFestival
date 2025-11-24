@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../css/Booth_directory.css" />
+    <link rel="stylesheet" href="../css/userinfo.css" />
 </head>
 
 <body>
@@ -107,23 +108,23 @@
         </div>
     </section>
 
-    <footer class="footer">
-    <div class="footer-left">
-        <a href="./feedback_page.php" class="feedback-btn">
-            <img src="../resources/feedback.png" class="feedbackicon">
-            Feedback
-        </a>
-    </div>
+    <footer>
+        <div class="footer-top">
+            <a href="../php/feedback_page.php" class="btn feedbacks">
+                <img src="../resources/feedback.png" class="feedbackicon"> feedback
+            </a>
+        </div>
 
-    <p class="footer-center">© 2025 Eatfinity Fair</p>
-
-    <div class="footer-right social">
-        <i class="fas fa-envelope"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-tiktok"></i>
-    </div>
-</footer>
+        <div class="footer-bottom">
+            <p>© 2025 Eatfinity Fair</p>
+            <div class="social">
+                <i class="fas fa-envelope"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-tiktok"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
