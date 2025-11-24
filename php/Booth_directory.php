@@ -110,7 +110,7 @@
 
     <footer>
         <div class="footer-top">
-            <a href="../html/feedback.html" class="btn feedbacks">
+            <a href="../php/feedback_page.php" class="btn feedbacks">
                 <img src="../resources/feedback.png" class="feedbackicon"> feedback
             </a>
         </div>
